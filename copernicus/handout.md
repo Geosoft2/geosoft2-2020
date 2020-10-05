@@ -46,30 +46,32 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Sentinel-3B wurde 2018 gestartet
 
 #### Sentinel-5P
-* Überbrückung bis 5 auf eumesat mitfliegt
+* Messungen siehe Sentinel-5
+* Fliegt nurnoch solange, bis Messinstrumente auf EUMETSAT mitfliegen werden.
+* Ist seit 2017 im Einsatz
 
-Sentinel-5P (das P steht für Precursor) ist ein eigenständiger Satellit, während die Sentinel-5 Folgemission als integrierte Instrumente auf den neuen MetOp-SG Satelliten von Eumetsat mitfliegen werden. Sentinel-5P übernimmt diese Aufgabe seit 2017 und überbrückt so die Zeit bis zum Start von Sentinel-5 auf MetOp-SG.
 
 
 #### Sentinel-6
-* wird noch entwickelt, messgeräte zur Zeit noch auf eumesat
+* Jahreszeitliche Messreihen zu den Meeresspiegehöhen
+* Set aus hochpräzsen Ortungsinstrumenten (Radar-Höhenmesser, Mikrowellen-Radiometer -> zentimetergenaue Bestimmung der Meeresoberflächen)
+* Daten zu Windgeschwindigkeiten, Meeresströmungen und Wellen
+* Noch in der Entwicklung, Start ist für den 15.11.2020 geplant
+* Vorläufersystem 2016 gestartet, wird von EUMETSAT betrieben
 
 
-Mit Sentinel-6 werden die jahrzehntelangen Messreihen der Jason-Satelliten zu den Meeresspiegelhöhen aus dem Weltraum fortgesetzt. Ein Set aus hochpräzisen Ortungsinstrumenten, darunter ein Radar-Höhenmesser und ein Mikrowellen-Radiometer, ermöglicht die zentimetergenaue Bestimmung der Meeresoberflächen - ein wichtiger Indikator für den Klimawandel. Sentinel-6 liefert auch Daten zu Windgeschwindigkeiten, Meeresströmungen und Wellen, die u.a. in der Schifffahrt von Bedeutung sind.
-
-Sentinel-6 wird entwickelt. Der Start von Sentinel-6A ist für den 15.11.2020 geplant. Das Vorläufersystem Jason-3 wurde 2016 gestartet und wird operationell von EUMETSAT betrieben.
-
-### Messinstrumente auf Eumesat
+### Messinstrumente EUMETSAT-betrieben
 
 #### Sentinel-4
-
-Sentinel-4 sind Instrumente an Bord der geostationären Wettersatelliten Meteosat. Sie werden präzise Daten über die Konzentration von Schadstoffen in der Luft sammeln. Mit Messungen über Europa und Nordafrika im Stundentakt werden die Sentinel-4 Instrumente die Ozonbelastung messen, den Feinstaubgehalt in der Luft oder die Luftqualität.
-
-Die Meteosat Satelliten werden von Eumetsat betrieben und liefern viele weitere Daten für die Wettervorhersage und für Klimamodelle. Der Start des ersten Sentinel-4 Instruments auf einem Meteosat Satelliten soll 2022 erfolgen.
+* Präzise Daten über Konzentration von Schadstoffen in der Luft
+* Stündliche Messungen von Ozonbelastung, Feinstaubgehalt, Luftqualität
+* Erster Einsatz auf einem Meteosat soll 2022 erfolgen
 
 #### Sentinel-5
+* Mission zu Messung von Atmosphärengasen weltweit (Methan, Ozon, Stickstoff, Aerosole)
+* will komplexe Prozesse in der Erdatmosphäre sichtbar machen
+* Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems,MetOp-SG geplant
 
-Sentinel-5 ist eine Mission zur Messung von Atmosphärengasen weltweit. Spurengase wie Methan, Ozon und Stickstoff, ebenso wie Aerosole, spielen beim Wetter, dem Klimawandel und der Luftreinheit eine wichtige Rolle. Sentinel-5 soll diese komplexen Prozesse in der Erdatmosphäre sichtbar machen. Die Daten sind für die Wissenschaft, für die Wettervorhersage und zur Bestimmung der Luftqualität von Bedeutung. Der erste Start ist 2022 auf der neuen Generation des polaren EUMETSAT Systems, MetOp-SG geplant.
 
 ## what was/is the time line
 
@@ -78,5 +80,18 @@ Sentinel-5 ist eine Mission zur Messung von Atmosphärengasen weltweit. Spurenga
 ## under which conditions are the data distributed
 
 ## how can one get access to the data
+1. Auf Copernicus Open Access Hub registrieren (https://scihub.copernicus.eu/userguide/SelfRegistration)
+**Wichtig! Es dauert 1 Woche bis die Nuterdaten aktiviert werden. Frühzeitig registrieren für API Nutzung!**
+
+### Manuell
+1. Einloggen (https://scihub.copernicus.eu/dhus/#/home)
+2. Bereich selektieren
+3. Produkte suchen
+4. Produkte auswählen und herunterladen
+
+### Python API
+1. https://github.com/sentinelsat/sentinelsat
+
+
 
 ## where can one process the data
