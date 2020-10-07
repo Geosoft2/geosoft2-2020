@@ -28,8 +28,8 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Auflösung von bis zu 10m, Abtastbreite von 290km
 * Ermöglicht Veränderungen der Vegetation zu erkennen, um:
   - Erntevorhersagen zu erstellen
-  - Wladbestände zu kartieren 
-  - Waschtum von Wild- und Nutzpflanzen zu bestimmen
+  - Waldbestände zu kartieren 
+  - Wachstum von Wild- und Nutzpflanzen zu bestimmen
   - Algenwachstum an Küsten- un Binnengewässern beobachten
   - Sedimenteintrag in Flussdeltas nachzuverfolgen
 * Sentinel-2B wurde 2017 gestartet
@@ -81,7 +81,9 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 ## how can one get access to the data
 1. Auf Copernicus Open Access Hub registrieren (https://scihub.copernicus.eu/userguide/SelfRegistration)
-**Wichtig! Es dauert 1 Woche bis die Nuterdaten aktiviert werden. Frühzeitig registrieren für API Nutzung!**
+**Wichtig! Es dauert 1 Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
+
+Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
 
 ### Manuell
 1. Einloggen (https://scihub.copernicus.eu/dhus/#/home)
@@ -90,7 +92,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 4. Produkte auswählen und herunterladen
 
 ### Python API
-1. https://github.com/sentinelsat/sentinelsat
+1. Metadaten: https://github.com/sentinelsat/sentinelsat
 
 
 
