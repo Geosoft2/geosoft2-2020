@@ -119,7 +119,15 @@ Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copern
 * Jede der fünf konkurrierenden Plattformen bietet auch Zugang zu zusätzlichen kommerziellen Satelliten- oder Nicht-Weltraum-Datensätzen sowie Premium-Angeboten in Bezug auf Support oder Priorität. 
 * Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.**
 
-![sobloo][images/sobloo.png]
+
+| DIAS                          | Free          | Cost  | Abilities to interact |
+| :----------------------------:|:-------------:| :----:| :-------------------: |
+| ![wekeo](images/wekeo.png)    | right-aligned | $1600 |                       |
+| col 2 is                      | centered      |   $12 |                       |
+| zebra stripes                 | are neat      |    $1 |                       |
+
+
+![wekeo](images/wekeo.png)
 
 Begriffe:lokal = du lädst die Daten auf deinen Computer herunter; cloud = du nutzt eine Schnittstelle (API) oder eine Platform um die Berechnungen auf einem oder vielen Servern im Internet auszuführen.
 
