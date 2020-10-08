@@ -123,7 +123,7 @@ Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copern
 | DIAS                            | Free          | Cost  | Abilities to interact |
 | :------------------------------:|:-------------:| :----:| :-------------------: |
 | ![wekeo](images/wekeo.png)      | right-aligned | $1600 |                       |
-| ![sobloo](images/cobloo.png)    | centered      |   $12 |                       |
+| ![sobloo](images/sobloo.png)    | centered      |   $12 |                       |
 | ![creodias](images/creodias.png)| are neat      |    $1 |                       |
 | ![onda](images/onda.png)        |               |       |                       |
 | ![mundi](images/mundi.png)      |               |       |                       |
