@@ -95,20 +95,36 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 1. Auf Copernicus Open Access Hub registrieren (https://scihub.copernicus.eu/userguide/SelfRegistration)
 **Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
+
+## where can one process the data
+
 Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
 
-### Manuell
+### Lokal
+#### Manuell
 1. Einloggen (https://scihub.copernicus.eu/dhus/#/home)
 2. Bereich selektieren
 3. Produkte suchen
 4. Produkte auswählen und herunterladen
 
-### Python API
+#### Python API
 1. Metadaten: https://github.com/sentinelsat/sentinelsat
 
 **Daten werden lediglich 12 Monate online vorgehalten. Beim versuchten Zugriff auf ältere Daten wird automatisch ein Abruf aus dem Langzeitarchiv angefordert. Der eigentliche Download kann vom Benutzer nach Wiederherstellung der Daten (innerhalb von 24 Stunden) initiiert werden. Ein Benutzerkontingent für die maximale Anzahl von Anforderungen pro Stunde und Benutzer wird festgelegt. Aus den Langzeitarchiven restaurierte Produkte werden mindestens 3 Tage lang online aufbewahrt.**
 
+### Cloud
 
-## where can one process the data
+* Europäische Kommission den Einsatz von fünf Cloud-basierten Plattformen finanziert, die einen zentralen Zugang zu Copernicus-Daten und -Informationen sowie zu Verarbeitungswerkzeugen ermöglichen. Diese Plattformen werden als DIAS (Data and Information Access Services) bezeichnet.
+* ermöglichen es den Nutzern, Copernicus-Daten und -Informationen aufzufinden, zu handhaben, zu verarbeiten und herunterzuladen. Alle DIAS-Plattformen bieten Zugang zu den Daten von Copernicus Sentinel sowie zu den Informationsprodukten aus den sechs Betriebsdiensten von Copernicus sowie zu Cloud-basierten Tools.
+* Jede der fünf konkurrierenden Plattformen bietet auch Zugang zu zusätzlichen kommerziellen Satelliten- oder Nicht-Weltraum-Datensätzen sowie Premium-Angeboten in Bezug auf Support oder Priorität. 
+* Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.**
 
-Entweder local oder cloudbasiert
+* 
+
+Begriffe:lokal = du lädst die Daten auf deinen Computer herunter; cloud = du nutzt eine Schnittstelle (API) oder eine Platform um die Berechnungen auf einem oder vielen Servern im Internet auszuführen.
+
+Zu Lokal gehören dann die APIs und Möglichkeiten zum Datendownload, ggf. auch sowas wie Nutzungsrechte.
+
+Und ja, es wäre gut wenn du die existierenden Lösungen beschreibst: wer bietet da was an, ist das alles kostenlos/öffentlich, gibt es da nur Unis oder auch Firmen? Welche Produkte gibt es die versprechen Copernicus-Daten verarbeiten zu können, welche Forschungsprojekte arbeiten an welchen Daten oder neuen Funktionen?
+
+Generelle Vorteile ist nicht so spannend, weil der klare Vorteil ja ist: Ohne Cloud geht es gar nicht, zumindest nicht lokal. Du kannst natürlich noch Cloud vs. Rechenzentrum unterscheiden, dann hättest du bei Cloud noch Aspekte dynamische Skalierbarkeit und viele verschiedene Nutzer.
