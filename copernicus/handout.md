@@ -120,11 +120,13 @@ Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copern
 * Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.**
 
 
-| DIAS                          | Free          | Cost  | Abilities to interact |
-| :----------------------------:|:-------------:| :----:| :-------------------: |
-| ![wekeo](images/wekeo.png)    | right-aligned | $1600 |                       |
-| col 2 is                      | centered      |   $12 |                       |
-| zebra stripes                 | are neat      |    $1 |                       |
+| DIAS                            | Free          | Cost  | Abilities to interact |
+| :------------------------------:|:-------------:| :----:| :-------------------: |
+| ![wekeo](images/wekeo.png)      | right-aligned | $1600 |                       |
+| ![sobloo](images/cobloo.png)    | centered      |   $12 |                       |
+| ![creodias](images/creodias.png)| are neat      |    $1 |                       |
+| ![onda](images/onda.png)        |               |       |                       |
+| ![mundi](images/mundi.png)      |               |       |                       |
 
 
 ![wekeo](images/wekeo.png)
