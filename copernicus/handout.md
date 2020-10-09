@@ -71,7 +71,9 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems,MetOp-SG geplant
 
 
-## what was/is the time line
+## Zeitplan
+
+![schedule](images/schedule.png)
 
 
 ## Allgemeine Geschäftsbedingungen für die Nutzung der Copernicus-Daten
@@ -89,11 +91,11 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 
 ## Datenzugriff
 ### Lokal
-1. Auf Copernicus Open Access Hub [registrieren] (https://scihub.copernicus.eu/userguide/SelfRegistration)
+1. Auf Copernicus Open Access Hub [registrieren](https://scihub.copernicus.eu/userguide/SelfRegistration)
 **Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
 #### Manuell
-1. [Einloggen] (https://scihub.copernicus.eu/dhus/#/home)
+1. [Einloggen](https://scihub.copernicus.eu/dhus/#/home)
 2. Bereich selektieren
 3. Produkte suchen
 4. Produkte auswählen und herunterladen
