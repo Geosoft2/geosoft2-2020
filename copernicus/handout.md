@@ -6,9 +6,9 @@ Copernicus ist das Erdbeobachtungsprogramm der Europäischen Union, das sich mit
 Ziele:
 * Umweltschutz
 * Unterstützung von Zivilschutz und Sicherheitsbemühungen
-* Unterstützung eines nachhaltigen Zuwachses der EU-Wirtschaft
+* Unterstützung eines nachhaltigen Zuwachses der EU-Wirtschaft#
 
-## which satellites are involved, for which purposes
+Eine Übersicht der aktuellen [Forschungsprojekte](https://www.copernicus.eu/en/documentation/research-projects)
 
 Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf Satelliten von Eumetsat mitfliegen.
 
@@ -50,8 +50,6 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Fliegt nurnoch solange, bis Messinstrumente auf EUMETSAT mitfliegen werden.
 * Ist seit 2017 im Einsatz
 
-
-
 #### Sentinel-6
 * Jahreszeitliche Messreihen zu den Meeresspiegehöhen
 * Set aus hochpräzsen Ortungsinstrumenten (Radar-Höhenmesser, Mikrowellen-Radiometer -> zentimetergenaue Bestimmung der Meeresoberflächen)
@@ -75,8 +73,6 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 ## what was/is the time line
 
-## what are the data volumes
-Dateigröße ca. 1GB pro Datei.
 
 ## Allgemeine Geschäftsbedingungen für die Nutzung der Copernicus-Daten
 Nutzer der Daten haben das Recht:
@@ -91,50 +87,41 @@ Nutzer der Daten haben das Recht:
 gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder jeglicher anderer Form der Bereitstellung wie folgt zu kennzeichnen: “enthält Copernicus-Daten (Jahr des Abrufs) ”.
 
 
-## how can one get access to the data
-1. Auf Copernicus Open Access Hub registrieren (https://scihub.copernicus.eu/userguide/SelfRegistration)
+## Datenzugriff
+### Lokal
+1. Auf Copernicus Open Access Hub [registrieren] (https://scihub.copernicus.eu/userguide/SelfRegistration)
 **Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
-
-## where can one process the data
-
-Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
-
-### Lokal
 #### Manuell
-1. Einloggen (https://scihub.copernicus.eu/dhus/#/home)
+1. [Einloggen] (https://scihub.copernicus.eu/dhus/#/home)
 2. Bereich selektieren
 3. Produkte suchen
 4. Produkte auswählen und herunterladen
 
 #### Python API
-1. Metadaten: https://github.com/sentinelsat/sentinelsat
+https://github.com/sentinelsat/sentinelsat
+Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
+**Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
 **Daten werden lediglich 12 Monate online vorgehalten. Beim versuchten Zugriff auf ältere Daten wird automatisch ein Abruf aus dem Langzeitarchiv angefordert. Der eigentliche Download kann vom Benutzer nach Wiederherstellung der Daten (innerhalb von 24 Stunden) initiiert werden. Ein Benutzerkontingent für die maximale Anzahl von Anforderungen pro Stunde und Benutzer wird festgelegt. Aus den Langzeitarchiven restaurierte Produkte werden mindestens 3 Tage lang online aufbewahrt.**
 
+**Dateigröße ca. 1GB pro Datei**
+
+## Wo können die Daten verarbeitet werden
+
+### Lokal
+
+Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satellitendaten die OpenSource-Software **SNAP (Sentinel Application Platform)** entwickelt. Mit der Software können Verarbeitungsketten vorbereitet werden, an deren Ende gebrauchsfähige und per GIS auswertbare „Satellitenbilder“ stehen.
+
 ### Cloud
 
-* Europäische Kommission den Einsatz von fünf Cloud-basierten Plattformen finanziert, die einen zentralen Zugang zu Copernicus-Daten und -Informationen sowie zu Verarbeitungswerkzeugen ermöglichen. Diese Plattformen werden als DIAS (Data and Information Access Services) bezeichnet.
+* Europäische Kommission hat den Einsatz von fünf Cloud-basierten Plattformen finanziert, die einen zentralen Zugang zu Copernicus-Daten und -Informationen sowie zu Verarbeitungswerkzeugen ermöglichen. Diese Plattformen werden als DIAS (Data and Information Access Services) bezeichnet.
 * ermöglichen es den Nutzern, Copernicus-Daten und -Informationen aufzufinden, zu handhaben, zu verarbeiten und herunterzuladen. Alle DIAS-Plattformen bieten Zugang zu den Daten von Copernicus Sentinel sowie zu den Informationsprodukten aus den sechs Betriebsdiensten von Copernicus sowie zu Cloud-basierten Tools.
 * Jede der fünf konkurrierenden Plattformen bietet auch Zugang zu zusätzlichen kommerziellen Satelliten- oder Nicht-Weltraum-Datensätzen sowie Premium-Angeboten in Bezug auf Support oder Priorität. 
-* Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.**
+* Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.** 
+
+![wekeo](images/wekeo.png) ![sobloo](images/sobloo.png)  ![creodias](images/creodias.png) ![onda](images/onda.png) ![mundi](images/mundi.png) 
+
+Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 
 
-| DIAS                            | Free          | Cost  | Abilities to interact |
-| :------------------------------:|:-------------:| :----:| :-------------------: |
-| ![wekeo](images/wekeo.png)      | right-aligned | $1600 |                       |
-| ![sobloo](images/sobloo.png)    | centered      |   $12 |                       |
-| ![creodias](images/creodias.png)| are neat      |    $1 |                       |
-| ![onda](images/onda.png)        |               |       |                       |
-| ![mundi](images/mundi.png)      |               |       |                       |
-
-
-![wekeo](images/wekeo.png)
-
-Begriffe:lokal = du lädst die Daten auf deinen Computer herunter; cloud = du nutzt eine Schnittstelle (API) oder eine Platform um die Berechnungen auf einem oder vielen Servern im Internet auszuführen.
-
-Zu Lokal gehören dann die APIs und Möglichkeiten zum Datendownload, ggf. auch sowas wie Nutzungsrechte.
-
-Und ja, es wäre gut wenn du die existierenden Lösungen beschreibst: wer bietet da was an, ist das alles kostenlos/öffentlich, gibt es da nur Unis oder auch Firmen? Welche Produkte gibt es die versprechen Copernicus-Daten verarbeiten zu können, welche Forschungsprojekte arbeiten an welchen Daten oder neuen Funktionen?
-
-Generelle Vorteile ist nicht so spannend, weil der klare Vorteil ja ist: Ohne Cloud geht es gar nicht, zumindest nicht lokal. Du kannst natürlich noch Cloud vs. Rechenzentrum unterscheiden, dann hättest du bei Cloud noch Aspekte dynamische Skalierbarkeit und viele verschiedene Nutzer.
