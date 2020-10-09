@@ -93,8 +93,6 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 ### Lokal
 1. Auf Copernicus Open Access Hub [registrieren](https://scihub.copernicus.eu/userguide/SelfRegistration)
 
-**Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
-
 #### Manuell
 1. [Einloggen](https://scihub.copernicus.eu/dhus/#/home)
 2. Bereich selektieren
@@ -104,15 +102,16 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 #### Python API
 [Sentinelsat auf GitHub](https://github.com/sentinelsat/sentinelsat)
 
-Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
+* Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
+* **Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
+* Daten werden lediglich 12 Monate online vorgehalten. Beim versuchten Zugriff auf ältere Daten wird automatisch ein Abruf aus dem Langzeitarchiv angefordert. Der eigentliche Download kann vom Benutzer nach Wiederherstellung der Daten (innerhalb von 24 Stunden) initiiert werden. Ein Benutzerkontingent für die maximale Anzahl von Anforderungen pro Stunde und Benutzer wird festgelegt. Aus den Langzeitarchiven restaurierte Produkte werden mindestens 3 Tage lang online aufbewahrt.
+* Dateigröße ca. 1GB pro Datei**
 
-**Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
+### Cloud
 
-**Daten werden lediglich 12 Monate online vorgehalten. Beim versuchten Zugriff auf ältere Daten wird automatisch ein Abruf aus dem Langzeitarchiv angefordert. Der eigentliche Download kann vom Benutzer nach Wiederherstellung der Daten (innerhalb von 24 Stunden) initiiert werden. Ein Benutzerkontingent für die maximale Anzahl von Anforderungen pro Stunde und Benutzer wird festgelegt. Aus den Langzeitarchiven restaurierte Produkte werden mindestens 3 Tage lang online aufbewahrt.**
+s. Datenverarbeitung
 
-**Dateigröße ca. 1GB pro Datei**
-
-## Wo können die Daten verarbeitet werden
+## Datenverarbeitung
 
 ### Lokal
 
