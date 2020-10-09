@@ -92,6 +92,7 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 ## Datenzugriff
 ### Lokal
 1. Auf Copernicus Open Access Hub [registrieren](https://scihub.copernicus.eu/userguide/SelfRegistration)
+
 **Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
 #### Manuell
