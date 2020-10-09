@@ -102,7 +102,7 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 4. Produkte auswählen und herunterladen
 
 #### Python API
-https://github.com/sentinelsat/sentinelsat
+[Sentinelsat auf GitHub](https://github.com/sentinelsat/sentinelsat)
 Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
 **Wichtig! Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
 
