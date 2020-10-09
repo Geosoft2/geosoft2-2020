@@ -73,7 +73,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 ## Zeitplan
 
-![schedule](images/schedule.png)
+![schedule](images/Schedule.png)
 
 
 ## Allgemeine Geschäftsbedingungen für die Nutzung der Copernicus-Daten
