@@ -6,7 +6,7 @@ Copernicus ist das Erdbeobachtungsprogramm der Europäischen Union, das sich mit
 Ziele:
 * Umweltschutz
 * Unterstützung von Zivilschutz und Sicherheitsbemühungen
-* Unterstützung eines nachhaltigen Zuwachses der EU-Wirtschaft#
+* Unterstützung eines nachhaltigen Zuwachses der EU-Wirtschaft
 
 Eine Übersicht der aktuellen [Forschungsprojekte](https://www.copernicus.eu/en/documentation/research-projects)
 
