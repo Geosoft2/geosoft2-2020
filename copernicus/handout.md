@@ -10,7 +10,7 @@ Ziele:
 
 Eine Übersicht der aktuellen [Forschungsprojekte](https://www.copernicus.eu/en/documentation/research-projects)
 
-Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf Satelliten von Eumetsat mitfliegen.
+Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf Satelliten von EUMETSAT mitfliegen.
 
 ### Satelliten
 #### Sentinel-1:
@@ -30,7 +30,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
   - Erntevorhersagen zu erstellen
   - Waldbestände zu kartieren 
   - Wachstum von Wild- und Nutzpflanzen zu bestimmen
-  - Algenwachstum an Küsten- un Binnengewässern beobachten
+  - Algenwachstum an Küsten- und Binnengewässern beobachten
   - Sedimenteintrag in Flussdeltas nachzuverfolgen
 * Sentinel-2B wurde 2017 gestartet
 
@@ -47,7 +47,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 #### Sentinel-5P
 * Messungen siehe Sentinel-5
-* Fliegt nurnoch solange, bis Messinstrumente auf EUMETSAT mitfliegen werden.
+* Fliegt nurnoch solange, bis Messinstrumente auf Satelliten von EUMETSAT mitfliegen werden.
 * Ist seit 2017 im Einsatz
 
 #### Sentinel-6
@@ -68,7 +68,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 #### Sentinel-5
 * Mission zu Messung von Atmosphärengasen weltweit (Methan, Ozon, Stickstoff, Aerosole)
 * will komplexe Prozesse in der Erdatmosphäre sichtbar machen
-* Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems,MetOp-SG geplant
+* Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems, MetOp-SG, erfolgen
 
 
 ## Zeitplan
