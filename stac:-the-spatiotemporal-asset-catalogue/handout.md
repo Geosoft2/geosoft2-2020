@@ -12,9 +12,9 @@ Mit „Spatiotemporal Asset“ sind alle Dokumente gemeint, die Information mit 
 
 - Eine **Community**
 
-STAC ist ebenfalls eine Community von Developern, siehe das [STAC Github Repository] (https://github.com/radiantearth/stac-spec). Die Unternehmen in der Darstellung unterstützen die Entwicklung von STAC.
+STAC ist ebenfalls eine Community von Developern, siehe das [STAC Github Repository](https://github.com/radiantearth/stac-spec). Die Unternehmen in der Darstellung unterstützen die Entwicklung von STAC.
 
-![STAC Unternehmen] (https://stacspec.org/images/STAC_companies.png)
+![STAC Unternehmen](https://stacspec.org/images/STAC_companies.png)
 
 ## Gründe für die Entwicklung von STAC
 
@@ -52,19 +52,19 @@ Ein STAC Item ist ein GeoJSON-Feature und repräsentiert eine nicht weiter teilb
 
 Als GeoJSON hat es Felder für id, type, bbox, geometry und properties. Das JSON kann erweitert werden mit Feldern für ein Thumbnail, Asset Links zu Daten, Relationship Links zu verwandten STAC Items und mehr.
 
-Weitere Infos: [STAC Item Spezifikation] (https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md)
+Weitere Infos: [STAC Item Spezifikation](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md)
 
 ### STAC Catalog
 
 Bei dem STAC Catalog handelt es sich um eine JSON-Datei mit einer Liste von STAC Items und/oder eine Liste von Sub-Catalogs, wodurch eine hierarchische Anordnung von STAC Items möglich ist. STAC Catalogs haben eine flexible Struktur und linken STAC Items, damit sie leicht gecrawlt oder durchgebrowst werden können.
 
-Weitere Infos: [STAC Catalog Spezifikation] (https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md)
+Weitere Infos: [STAC Catalog Spezifikation](https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md)
 
 ### STAC Collection
 
 Die STAC Collection ist eine Erweiterung des STAC Catalog. Eine STAC Collection enthält zusätzliche Felder für die Beschreibung des räumlichen und zeitlichen Umfangs der Daten, der Lizenz, der Keywords, der Anbieter etc. 
 
-Weitere Infos: [STAC Collection Spezifikation] (https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md)
+Weitere Infos: [STAC Collection Spezifikation](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md)
       
 ### STAC API
 
@@ -78,13 +78,13 @@ Beispiel User Query:
 
 Die STAC API will OGCs WFS 3 Spezifikation erfüllen. 
 
-Weitere Infos: [STAC API Spezifikation] (https://github.com/radiantearth/stac-api-spec/blob/master/api-spec.md)
+Weitere Infos: [STAC API Spezifikation](https://github.com/radiantearth/stac-api-spec/blob/master/api-spec.md)
 
 ## STAC Tools
 
 Es existieren eine Reihe an Tools, die die Nutzung der STAC Spezifikation vereinfachen. Darunter:
 
 - STAC Browser: Browser für STAC Catalogs
-  - z.B. [Sentinel 2] (https://sentinel.stac.cloud/?t=catalogs)
-  - [Landsat] (https://landsat.stac.cloud/?t=catalogs)
+  - z.B. [Sentinel 2](https://sentinel.stac.cloud/?t=catalogs)
+  - [Landsat](https://landsat.stac.cloud/?t=catalogs)
 - STAC Validator: validiert STAC JSON Files gegen die STAC Spezifikation und lokale STAC Extensions
