@@ -1,28 +1,33 @@
 @a2beckj
+
 # Copernicus
 
-Copernicus ist das Erdbeobachtungsprogramm der Europäischen Union, das sich mit unserem Planeten und seiner Umwelt zum größtmöglichen Nutzen aller europäischen Bürger befasst. Es bietet Informationsdienste auf der Grundlage von satellitengestützter Erdbeobachtung und In-situ-Daten (Nicht-Weltraumdaten) an.
+Copernicus ist das Erdbeobachtungsprogramm der Europäischen Union, das sich mit unserem Planeten und seiner Umwelt zum größtmöglichen Nutzen aller europäischen Bürger befasst. Es bietet Informationsdienste auf der Grundlage von satellitengestützter Erdbeobachtung und Nicht-Weltraum-Daten an.
 
 Ziele:
 * Umweltschutz
 * Unterstützung von Zivilschutz und Sicherheitsbemühungen
 * Unterstützung eines nachhaltigen Zuwachses der EU-Wirtschaft
 
-Eine Übersicht der aktuellen [Forschungsprojekte](https://www.copernicus.eu/en/documentation/research-projects)
+Eine Übersicht der aktuellen Forschungprjekte findet sich [hier](https://www.copernicus.eu/en/documentation/research-projects).
 
 Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf Satelliten von EUMETSAT mitfliegen.
 
 ### Satelliten
-#### Sentinel-1:
-* Bis zu 5 Meter hochauflösendes Radarinstrument
+
+#### Sentinel-1
+
+* Radar kann in vier verschiedenen Beobachtungsmodi mit unterschiedlicher Auflösung arbeiten
 * Lieferung von Daten über Land- und Wasseroberflächen, unabhängig von Helligkeit und Wolkenbedeckung
 * Ermöglicht zeitnahe Aufnahmen von: 
   - Überschwemmungen an Land
   - Ölverschmutzungen auf dem Meer
   - Zeitreihen kleinster Bodenbewegungen oder der Vegetationsdichte
-* Sentinel-1B wurde 2016 gestartet
+* Sentinel-1B (B = 2te Satellit der Sentinel-1 Satellitenreihe) wurde 2016 gestartet
+* Beispielbilder sieht man [hier](https://eos.com/sentinel-1/).
   
-#### Sentinel-2:
+#### Sentinel-2
+
 * liefern Aufnahmen im sichtaren und infraroten Spektrum (443 - 2190nm)
 * 13 Kanäle zur Beobachtung der Landoberflächen
 * Auflösung von bis zu 10m, Abtastbreite von 290km
@@ -33,8 +38,10 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
   - Algenwachstum an Küsten- und Binnengewässern beobachten
   - Sedimenteintrag in Flussdeltas nachzuverfolgen
 * Sentinel-2B wurde 2017 gestartet
+* Beispielbilder sieht man [hier](https://eos.com/sentinel-2/).
 
 #### Sentinel-3
+
 * nutzt ein Paket aus 5 Instrumenten
 * hochpräzise Bestimmung der Temperatur, der Farbe und des Pegels der Meeresoberfläche
 * Ermöglicht Erkenntnisse über:
@@ -46,11 +53,13 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Sentinel-3B wurde 2018 gestartet
 
 #### Sentinel-5P
+
 * Messungen siehe Sentinel-5
 * Fliegt nurnoch solange, bis Messinstrumente auf Satelliten von EUMETSAT mitfliegen werden.
 * Ist seit 2017 im Einsatz
 
 #### Sentinel-6
+
 * Jahreszeitliche Messreihen zu den Meeresspiegehöhen
 * Set aus hochpräzsen Ortungsinstrumenten (Radar-Höhenmesser, Mikrowellen-Radiometer -> zentimetergenaue Bestimmung der Meeresoberflächen)
 * Daten zu Windgeschwindigkeiten, Meeresströmungen und Wellen
@@ -61,11 +70,13 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 ### Messinstrumente EUMETSAT-betrieben
 
 #### Sentinel-4
+
 * Präzise Daten über Konzentration von Schadstoffen in der Luft
 * Stündliche Messungen von Ozonbelastung, Feinstaubgehalt, Luftqualität
 * Erster Einsatz auf einem Meteosat soll 2022 erfolgen
 
 #### Sentinel-5
+
 * Mission zu Messung von Atmosphärengasen weltweit (Methan, Ozon, Stickstoff, Aerosole)
 * will komplexe Prozesse in der Erdatmosphäre sichtbar machen
 * Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems, MetOp-SG, erfolgen
@@ -77,6 +88,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 
 ## Allgemeine Geschäftsbedingungen für die Nutzung der Copernicus-Daten
+
 Nutzer der Daten haben das Recht:
 * die Daten in einer beliebigen Weise zu Nutzen, zu verändern und zu modifizieren und dadurch geänderte Produkte herzustellen
 * die Daten an weitere Nutzer, Auftragnehmer und andere Teilnehmer in Rahmen von Projekten weiterzugeben, solange diese die Allgemeinen Geschäftsbedingungen akzeptieren.
@@ -90,17 +102,21 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 
 
 ## Datenzugriff
+
 ### Lokal
+
 1. Auf Copernicus Open Access Hub [registrieren](https://scihub.copernicus.eu/userguide/SelfRegistration)
 
 #### Manuell
+
 1. [Einloggen](https://scihub.copernicus.eu/dhus/#/home)
 2. Bereich selektieren
 3. Produkte suchen
 4. Produkte auswählen und herunterladen
 
 #### Python API
-[Sentinelsat auf GitHub](https://github.com/sentinelsat/sentinelsat)
+
+Nutzerdokumentation gibt es auf [GitHub](https://github.com/sentinelsat/sentinelsat) oder [hier](https://sentinelsat.readthedocs.io/en/stable/).
 
 * Protokoll: Open Data Protocol (OData), Schnittstelle für den Zugriff auf Copernicus Sentinel.
 * **Es dauert bis zu einer Woche bis die Nuterdaten für die API Nutzung aktiviert/aktualisiert werden. Frühzeitig registrieren!**
@@ -115,7 +131,7 @@ s. Datenverarbeitung
 
 ### Lokal
 
-Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satellitendaten die OpenSource-Software **SNAP (Sentinel Application Platform)** entwickelt. Mit der Software können Verarbeitungsketten vorbereitet werden, an deren Ende gebrauchsfähige und per GIS auswertbare „Satellitenbilder“ stehen.
+Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satellitendaten die OpenSource-Software **[SNAP](https://step.esa.int/main/toolboxes/snap/) (Sentinel Application Platform)** entwickelt. Mit der Software können Verarbeitungsketten vorbereitet werden, an deren Ende gebrauchsfähige und per GIS auswertbare „Satellitenbilder“ stehen.
 
 ### Cloud
 
@@ -128,4 +144,5 @@ Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satelliten
 
 Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 
+## Quellen
 
