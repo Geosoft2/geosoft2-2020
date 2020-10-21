@@ -17,6 +17,8 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 #### Sentinel-1
 
+![Sentinel-1](https://de.wikipedia.org/wiki/Sentinel-1#/media/Datei:Sentinel_1-IMG_5874-gradient.jpg)
+
 * Radar kann in vier verschiedenen Beobachtungsmodi mit unterschiedlicher Auflösung arbeiten
 * Lieferung von Daten über Land- und Wasseroberflächen, unabhängig von Helligkeit und Wolkenbedeckung
 * Ermöglicht zeitnahe Aufnahmen von: 
@@ -146,3 +148,5 @@ Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 
 ## Quellen
 
+- https://www.copernicus.eu/en
+- https://www.d-copernicus.de/daten/satelliten/daten-sentinels/
