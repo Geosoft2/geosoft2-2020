@@ -8,7 +8,7 @@ STAC ist eine **Spezifikation**
 
 STAC ist eine Sprache zur Beschreibung von räumlichen Katalogen und Assets. Der Fokus liegt auf die Suche und Entdeckung von Daten.
 
-Mit „Spatiotemporal Asset“ sind alle Dokumente gemeint, die Information mit Raum- und Zeitbezug über die Erde repräsentieren. Momentan sind dies hauptsächlich Fernerkundungsaufnahmen (Satellit, Flugzeug, Drohne etc.), aber STAC ist erweiterbar auf SAR, Full Motion Pictures, Point Clouds, Hyperspectral, LiDAR und abgeleitete Daten wie NDVI, Digital Elevation Models, Mosaics etc. STAC arbeitet nicht mit Vektordaten.
+Mit „Spatiotemporal Asset“ sind alle Dokumente gemeint, die Information mit Raum- und Zeitbezug über die Erde repräsentieren. Momentan sind dies hauptsächlich Fernerkundungsaufnahmen (Satellit, Flugzeug, Drohne etc.), aber STAC ist erweiterbar auf SAR, Full Motion Video, Point Clouds, Hyperspectral, LiDAR und abgeleitete Daten wie NDVI, Digital Elevation Models, Mosaics etc. STAC arbeitet nicht mit Vektordaten.
 
 STAC ist ebenfalls eine **Community** von Developern, siehe das [STAC Github Repository](https://github.com/radiantearth/stac-spec). Die Unternehmen in der Darstellung unterstützen die Entwicklung von STAC/nutzen STAC.
 
@@ -18,7 +18,7 @@ Weitere Infos: [Website STAC](https://stacspec.org/), [Video Vorstellung STAC](h
 
 ## Gründe für die Entwicklung von STAC
 
-Geodaten existieren heutzutage in vielen verschiedenen Formaten. Es gibt keinen einheitlichen Weg Geodaten zu finden, was die Suche und Nutzung der Geodaten erschwert. Man muss viele verschiedene Portale kennen und diese durchsuchen ([USGSEarthExplorer](https://earthexplorer.usgs.gov/), [Copernicus Open Access Hub](https://scihub.copernicus.eu/dhus/#/home), [NASA Earthdata Search](https://search.earthdata.nasa.gov/search) ...), um an die gewünschten Geodaten zu kommen. Es gibt auch viele verschiedene APIs, die zwar ähnlich, aber leicht unterschiedlich sind und z.B. verschiedene Endpoints und Filterparameter haben.
+Geodaten existieren heutzutage in vielen verschiedenen Formaten. Es gibt keinen einheitlichen Weg Geodaten zu finden, was die Suche und Nutzung der Geodaten erschwert. Man muss viele verschiedene Portale kennen und diese durchsuchen ([USGSEarthExplorer](https://earthexplorer.usgs.gov/), [Copernicus Open Access Hub](https://scihub.copernicus.eu/dhus/#/home), [NASA Earthdata Search](https://search.earthdata.nasa.gov/search) etc.), um an die gewünschten Geodaten zu kommen. Es gibt auch viele verschiedene APIs, die zwar ähnlich, aber leicht unterschiedlich sind und z.B. verschiedene Endpoints und Filterparameter haben.
 
 Data Users haben zusätzlichen Aufwand durch die schwierige Suche nach Daten und dem Schreiben neuen Codes für jede Datenkollektion, die sie nutzten.
 
@@ -40,7 +40,7 @@ Die STAC Spezifikation beschreibt die Standardisierung von Metadaten, Namenskonv
 
 STAC nutzt das JSON-Format. Das Kern GeoJSON-Objekt kann erweitert werden um es für verschiedene Domänen anzupassen. Die JSON-Seiten können in interaktive HTML-Seiten umgewandelt werden.
 
-Die Spezifikation besteht aus 4 semi-unabhängigen Spezifikationen, die alleine oder zusammen genutzt werden können. Diese sind:
+Die Spezifikation besteht aus **4 semi-unabhängigen Spezifikationen**, die alleine oder zusammen genutzt werden können. Diese sind:
 
 - STAC Item: einzelnes Spatiotemporal Asset
 
@@ -105,17 +105,30 @@ Die zweite Tabelle listet STAC-spezifische Endpoints. "/" wird erweitert um eine
 | `/search` | ItemCollection | Search STAC Items by simple filtering |
 | `/search` | ItemCollection | POST-Method, search STAC items by full-featured filtering |
 
+Mehr Details und eine bessere Übersicht bietet [STAC OpenAPI](https://stacspec.org/STAC-api.html).
+
 #### API Filter
 
 Es kann nach Collection, Raum und Zeit gefiltert werden. 
 
-Beispiel - Ergebnis auf 4 Features begrenzen:
+Beispiel - Daten vom 1. Januar 2019 aus einer bestimmten Collection anfragen:
 
-`https://eod-catalog-svc-prod.astraea.earth/collections/mcd43a4/items?limit=4`
+`GET https://eod-catalog-svc-prod.astraea.earth/collections/mcd43a4/items?datetime=2019-01-01T00:00:00Z/2019-01-01T23:59:59Z`
 
-Beispiel - Ergebnis auf Features vom 1. Januar 2019 begrenzen:
+Beispiel - Daten aus Neuseeland aus dem ganzen Catalog anfragen:
 
-`https://eod-catalog-svc-prod.astraea.earth/collections/mcd43a4/items?datetime=2019-01-01T00:00:00Z/2019-01-01T23:59:59Z`
+`GET https://eod-catalog-svc-prod.astraea.earth/search?bbox=160.6,-55.95,-170,-25.89`
+
+Beispiel - der /search POST Endpoint nimmt ein JSON-Objekt als Filter an:
+
+`POST https://eod-catalog-svc-prod.astraea.earth/search`
+
+mit folgendem Request Body:
+
+`{
+  "bbox": [5.5, 46, 8, 47.4], 
+  "time": "2018-02-12T00:00:00Z/2018-03-18T12:31:12Z"
+}`
 
 [Weitere Beispiele](https://github.com/radiantearth/stac-api-spec/blob/master/examples.md)
 
