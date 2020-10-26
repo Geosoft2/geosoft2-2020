@@ -20,7 +20,7 @@ Weitere Infos: [Website STAC](https://stacspec.org/), [Video Vorstellung STAC](h
 
 Geodaten existieren heutzutage in vielen verschiedenen Formaten. Es gibt keinen einheitlichen Weg Geodaten zu finden, was die Suche und Nutzung der Geodaten erschwert. Man muss viele verschiedene Portale kennen und diese durchsuchen ([USGSEarthExplorer](https://earthexplorer.usgs.gov/), [Copernicus Open Access Hub](https://scihub.copernicus.eu/dhus/#/home), [NASA Earthdata Search](https://search.earthdata.nasa.gov/search) etc.), um an die gewünschten Geodaten zu kommen. Es gibt auch viele verschiedene APIs, die zwar ähnlich, aber leicht unterschiedlich sind und z.B. verschiedene Endpoints und Filterparameter haben.
 
-Data Users haben zusätzlichen Aufwand durch die schwierige Suche nach Daten und dem Schreiben neuen Codes für jede Datenkollektion, die sie nutzten.
+Data Users haben zusätzlichen Aufwand durch die schwierige Suche nach Daten und dem Schreiben neuen Codes für jede Datenkollektion, die sie nutzen.
 
 Weitere Infos: [Website STAC](https://stacspec.org/why-stac.html)
 
@@ -42,13 +42,13 @@ STAC nutzt das JSON-Format. Das Kern GeoJSON-Objekt kann erweitert werden um es 
 
 Die Spezifikation besteht aus **4 semi-unabhängigen Spezifikationen**, die alleine oder zusammen genutzt werden können. Diese sind:
 
-- STAC Item: einzelnes Spatiotemporal Asset
+- **STAC Item**: einzelnes Spatiotemporal Asset
 
-- STAC Catalog: JSON-Datei mit Links zur Strukturierung/Organisation von STAC-Items
+- **STAC Catalog**: JSON-Datei mit Links zur Strukturierung/Organisation von STAC-Items
 
-- STAC Collection: Erweiterung des STAC Catalog
+- **STAC Collection**: Erweiterung des STAC Catalog
 
-- STAC API: RESTful Suche nach STAC Items
+- **STAC API**: RESTful Suche nach STAC Items
 
 ### STAC Item
 
@@ -150,5 +150,5 @@ Es existieren eine Reihe an Tools, die die Nutzung der STAC Spezifikation verein
 
 - STAC Browser: Browser für STAC Catalogs
   - z.B. [Sentinel 2](https://sentinel.stac.cloud/?t=catalogs), [Landsat](https://landsat.stac.cloud/?t=catalogs)
-- [STAC Validator](https://staclint.com/): validiert STAC JSON Files gegen die STAC Spezifikation und lokale STAC Extensions
+- [STAC Validator](https://staclint.com/): validiert STAC JSON Files gegen die STAC Spezifikation
 - [STAC Index](https://stacindex.org/ecosystem): alle Software und Tools für STAC
