@@ -26,7 +26,9 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
   - Ölverschmutzungen auf dem Meer
   - Zeitreihen kleinster Bodenbewegungen oder der Vegetationsdichte
 * Sentinel-1B (B = 2te Satellit der Sentinel-1 Satellitenreihe) wurde 2016 gestartet
-* Beispielbilder sieht man [hier](https://eos.com/sentinel-1/).
+* Weitere Beispielbilder sieht man [hier](https://eos.com/sentinel-1/).
+
+
   
 #### Sentinel-2
 
