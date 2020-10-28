@@ -185,4 +185,4 @@ Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 - Abb. 4: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-2_Colour_visions_brosch%C3%BCre_eng.pdf (Abruf: 21.10.2020)
 - Abb. 5&6: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-3_A_bigger_picture_brosch%C3%BCre_engl.pdf (Abruf: 21 10. 2020)
 - Abb. 7: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-5p_factsheet_171211.pdf (Abruf: 21.10.2020)
-- Abb. x: https://az659834.vo.msecnd.net/eventsairwesteuprod/production-confmanage-public/42062c7b692346c78e805f74a4c3ba36 (Abruf: 21.10.2020)
+
