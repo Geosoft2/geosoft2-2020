@@ -17,7 +17,13 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 #### Sentinel-1
 
-![Sentinel-1](https://de.wikipedia.org/wiki/Sentinel-1#/media/Datei:Sentinel_1-IMG_5874-gradient.jpg)
+![Sentinel-1](images/1_1.png) 
+</br> Abb 1: Ölverschmutzung nähe der Belgischen Küste 2015 </br>Quelle: https://sentinel.esa.int/
+
+
+![Sentinel-1](images/1_2.png)
+</br> Abb 2: Überwachung der Entwicklung eines antarktischen Eisschildes</br> Quelle: https://sentinel.esa.int/
+
 
 * Radar kann in vier verschiedenen Beobachtungsmodi mit unterschiedlicher Auflösung arbeiten
 * Lieferung von Daten über Land- und Wasseroberflächen, unabhängig von Helligkeit und Wolkenbedeckung
@@ -31,6 +37,13 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
   
 #### Sentinel-2
+
+![Sentinel-2](images/2_1.png)
+</br> Abb 3: Falschfarben Bild zur Darstellung von chlorophyll Verteilungen in Vegetation </br>Quelle: https://www.d-copernicus.de/
+
+![Sentinel-2](images/2_2.png)
+</br> Abb 4: Hochauflösendes Satellitenbild </br> Quelle: https://www.d-copernicus.de/
+
 
 * liefern Aufnahmen im sichtaren und infraroten Spektrum (443 - 2190nm)
 * 13 Kanäle zur Beobachtung der Landoberflächen
@@ -46,6 +59,13 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 #### Sentinel-3
 
+![Sentinel-3](images/3_1.png)
+</br> Abb 5: Marines Chlorophyll </br> Quelle: https://www.d-copernicus.de/
+
+![Sentinel-3](images/3_2.png)
+</br> Abb 6: Temperatur der Meeresoberfläche </br> Quelle: https://www.d-copernicus.de/
+
+
 * nutzt ein Paket aus 5 Instrumenten
 * hochpräzise Bestimmung der Temperatur, der Farbe und des Pegels der Meeresoberfläche
 * Ermöglicht Erkenntnisse über:
@@ -57,6 +77,9 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 * Sentinel-3B wurde 2018 gestartet
 
 #### Sentinel-5P
+
+![Sentinel_5P](images/5P.png)
+</br> Abb 7: Darstellung der Konzentration der Atmosphärengase </br> Quelle: https://www.d-copernicus.de/
 
 * Messungen siehe Sentinel-5
 * Fliegt nurnoch solange, bis Messinstrumente auf Satelliten von EUMETSAT mitfliegen werden.
@@ -72,6 +95,7 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
 
 
 ### Messinstrumente EUMETSAT-betrieben
+EUTMETSAT: „Europäische Organisation für die Nutzung meteorologischer Satelliten“, Sitz: Darmstadt 
 
 #### Sentinel-4
 
@@ -150,5 +174,14 @@ Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 
 ## Quellen
 
+### Literaturverzeichnis
 - https://www.copernicus.eu/en
 - https://www.d-copernicus.de/daten/satelliten/daten-sentinels/
+
+### Abbildungsverzeichnis
+- Abb. 1 & 2: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/applications/maritime-monitoring (Abruf: 21.10.2020)
+- Abb. 3: https://www.d-copernicus.de/fileadmin/Content/Bilder/sentinels/SENTINEL-2_sheet_170125_1_.pdf (Abruf: 21.10.2020)
+- Abb. 4: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-2_Colour_visions_brosch%C3%BCre_eng.pdf (Abruf: 21.10.2020)
+- Abb. 5&6: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-3_A_bigger_picture_brosch%C3%BCre_engl.pdf (Abruf: 21 10. 2020)
+- Abb. 7: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-5p_factsheet_171211.pdf (Abruf: 21.10.2020)
+- Abb. x: https://az659834.vo.msecnd.net/eventsairwesteuprod/production-confmanage-public/42062c7b692346c78e805f74a4c3ba36 (Abruf: 21.10.2020)
