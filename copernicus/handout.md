@@ -170,6 +170,7 @@ Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satelliten
 
 ![wekeo](images/wekeo.png) ![sobloo](images/sobloo.png)  ![creodias](images/creodias.png) ![onda](images/onda.png) ![mundi](images/mundi.png) 
 
+Die Anbieter bieten unterschiedliche APIs und Funktionalitäten in verschiedenen Abrechnungsmodularitäten an. Im kostenfreien Bereich ist die Funktionalität in Bezug auf Rechen- und Speicherkapazität sehr eingeschränkt!
 Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
 
 ## Quellen
