@@ -136,9 +136,7 @@ Quelle: [Backend](https://openeo.org/software.html#clients)
 Die Daten – und Infrastrukturprovider können eine eigene Instanz der openEO API hosten.
 Einige Beispiele hierfür sind:
   * GeoPySpark
-  * Google Earth Engine
   * GRASS GIS
-  * Sentinel Hub
   
 Um einen eigenen Backend – Treiber zu starten, sollte man mit den gemeinsamen Funktionalitäten, die in einigen Programmiersprachen (z. B.: Java (Spring) API Commons, Python API Commons) implementiert sind, beginnen und sich mit den Client - Softwareprojekten beschäftigen
 
@@ -156,7 +154,7 @@ Quelle: [Plattform](https://openeo.org/platform/#about)
 
 #### Wer ist beteiligt?
 
-* Gegründet von der ESA, gestartet in September 2020
+* Gegründet und finanziert von der ESA, gestartet in September 2020
 * Mehrere Beteiligte: EODC, EGI, EURAC, GEO, Sinergise, VITO, WWU
 
 ![overview-openeo](https://openeo.org/assets/img/overview.dfa7e5ae.jpg)
