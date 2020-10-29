@@ -6,15 +6,15 @@
 
 STAC ist eine **Spezifikation**
 
-STAC ist eine Sprache zur Beschreibung von räumlichen Katalogen und Assets. Der Fokus liegt auf die Suche und Entdeckung von Daten.
+STAC ist eine Sprache zur Beschreibung von raumzeitlichen Katalogen und Assets. Der Fokus liegt auf die Suche und Entdeckung von Daten.
 
-Mit „Spatiotemporal Asset“ sind alle Dokumente gemeint, die Information mit Raum- und Zeitbezug über die Erde repräsentieren. Momentan sind dies hauptsächlich Fernerkundungsaufnahmen (Satellit, Flugzeug, Drohne etc.), aber STAC ist erweiterbar auf SAR, Full Motion Video, Point Clouds, Hyperspectral, LiDAR und abgeleitete Daten wie NDVI, Digital Elevation Models, Mosaics etc. STAC arbeitet nicht mit Vektordaten.
+Mit „Spatiotemporal Asset“ sind alle Dokumente gemeint, die Information mit Raum- und Zeitbezug über die Erde repräsentieren. Momentan sind dies hauptsächlich Fernerkundungsaufnahmen (Satellit, Flugzeug, Drohne etc.), aber Erweiterungen für SAR und Point Clouds existieren bereits und Erweiterungen für Full Motion Video, Hyperspectral, LiDAR und abgeleitete Daten wie NDVI, Digital Elevation Models, Mosaics etc. sind für die Zukunft geplant.
 
 STAC ist ebenfalls eine **Community** von Developern, siehe das [STAC Github Repository](https://github.com/radiantearth/stac-spec). Die Unternehmen in der Darstellung unterstützen die Entwicklung von STAC/nutzen STAC.
 
 ![STAC Unternehmen](https://stacspec.org/images/STAC_companies.png)
 
-Weitere Infos: [Website STAC](https://stacspec.org/), [Video Vorstellung STAC](http://bofh.nikhef.nl/events/FOSDEM/2020/AW1.126/introduction_to_spatiotemporal_asset_catalogs_stac.mp4) 
+Weitere Infos: [Website STAC](https://stacspec.org/), [Video Vorstellung STAC](https://www.youtube.com/watch?v=qGRrDPTwpmk), [Youtube Playlist mit STAC Bezug](https://www.youtube.com/watch?v=wtCqkhLS_AM&list=PL3QzFgBMGnbQWbW-V09AzSfCbnf6Q87Rq) 
 
 ## Gründe für die Entwicklung von STAC
 
@@ -38,11 +38,11 @@ Weitere Infos: [Website STAC](https://stacspec.org/overview.html)
 
 Die STAC Spezifikation beschreibt die Standardisierung von Metadaten, Namenskonventionen, Query Language (zukünftig) und Katalogstruktur.
 
-STAC nutzt das JSON-Format. Das Kern GeoJSON-Objekt kann erweitert werden um es für verschiedene Domänen anzupassen. Die JSON-Seiten können in interaktive HTML-Seiten umgewandelt werden.
+STAC nutzt das JSON-Format.
 
 Die Spezifikation besteht aus **4 semi-unabhängigen Spezifikationen**, die alleine oder zusammen genutzt werden können. Diese sind:
 
-- **STAC Item**: einzelnes Spatiotemporal Asset
+- **STAC Item**: Gruppierung von Assets mit normalerweise ähnlichen Eigenschaften
 
 - **STAC Catalog**: JSON-Datei mit Links zur Strukturierung/Organisation von STAC-Items
 
@@ -52,9 +52,9 @@ Die Spezifikation besteht aus **4 semi-unabhängigen Spezifikationen**, die alle
 
 ### STAC Item
 
-Ein STAC Item ist ein GeoJSON-Feature und repräsentiert eine nicht weiter teilbare Kollektion von Daten und Metadaten. Ein Item könnte zum Beispiel ein Satellitenfoto sein und seine Bänder sind Assets. Assets sind Dateien zum Downloaden.
+Ein STAC Item ist ein GeoJSON-Feature und repräsentiert eine nicht weiter teilbare Kollektion von Daten und Metadaten. Ein Item könnte zum Beispiel ein Satellitenfoto sein und seine spektralen Bänder sind Assets. Assets sind Dateien zum Downloaden.
 
-Als GeoJSON hat das STAC Item Felder für id, type, bbox, geometry und properties. Das STAC Item hat zusätzliche Felder für ein Thumbnail, Asset Links zu Daten, Relationship Links zu verwandten STAC Items und mehr.
+Als GeoJSON hat das STAC Item Felder für id, type, bbox, geometry und properties (in diesem Feld werden viele wichtige Metadaten untergebracht). Das STAC Item hat zusätzliche Felder für ein Thumbnail, Asset Links zu Daten, Relationship Links zu verwandten STAC Items und mehr.
 
 Beispiele: [Minimales Beispiel](https://github.com/radiantearth/stac-spec/blob/master/item-spec/examples/sample.json), [Ausgebautes Beispiel](https://github.com/radiantearth/stac-spec/blob/master/item-spec/examples/sample-full.json)
 
@@ -62,7 +62,7 @@ Weitere Infos: [Website STAC](https://stacspec.org/core.html), [STAC Item Spezif
 
 ### STAC Catalog
 
-Bei dem STAC Catalog handelt es sich um eine JSON-Datei mit einer Liste von STAC Items und/oder eine Liste von Sub-Catalogs, wodurch eine hierarchische Anordnung von STAC Items möglich ist. STAC Catalogs haben eine flexible Struktur und linken STAC Items, damit sie leicht gecrawlt oder durchgebrowst werden können.
+Bei dem STAC Catalog handelt es sich um eine JSON-Datei mit einer Liste an Links zu STAC Items und/oder Links zu Sub-Catalogs, wodurch eine hierarchische Anordnung von STAC Items möglich ist. STAC Catalogs haben eine flexible Struktur und linken STAC Items, damit sie leicht gecrawlt oder durchgebrowst werden können.
 
 STAC Catalogs können als statische oder dynamische Kataloge implementiert werden. Statische Kataloge bestehen aus einem Set aus Dateien auf einem Web-Server, die zueinander linken und deswegen gecrawlt werden können. Dynamische Kataloge werden als API implementiert und antworten dynamisch auf Nutzeranfragen. Statische Kataloge bieten den Vorteil, dass sie sehr zuverlässig und einfacher zu implementieren sind.
 
@@ -105,6 +105,8 @@ Die zweite Tabelle listet STAC-spezifische Endpoints. "/" wird erweitert um eine
 | `/search` | ItemCollection | Search STAC Items by simple filtering |
 | `/search` | ItemCollection | POST-Method, search STAC items by full-featured filtering |
 
+Tabellen entnommen aus [STAC API Spezifikation](https://github.com/radiantearth/stac-api-spec/blob/master/api-spec.md) mit leichten Änderungen.
+
 Mehr Details und eine bessere Übersicht bietet [STAC OpenAPI](https://stacspec.org/STAC-api.html).
 
 #### API Filter
@@ -113,15 +115,15 @@ Es kann nach Collection, Raum und Zeit gefiltert werden.
 
 Beispiel - Daten vom 1. Januar 2019 aus einer bestimmten Collection anfragen:
 
-`GET https://eod-catalog-svc-prod.astraea.earth/collections/mcd43a4/items?datetime=2019-01-01T00:00:00Z/2019-01-01T23:59:59Z`
+GET https://eod-catalog-svc-prod.astraea.earth/collections/mcd43a4/items?datetime=2019-01-01T00:00:00Z/2019-01-01T23:59:59Z
 
 Beispiel - Daten aus Neuseeland aus dem ganzen Catalog anfragen:
 
-`GET https://eod-catalog-svc-prod.astraea.earth/search?bbox=160.6,-55.95,-170,-25.89`
+GET https://eod-catalog-svc-prod.astraea.earth/search?bbox=160.6,-55.95,-170,-25.89
 
 Beispiel - der /search POST Endpoint nimmt ein JSON-Objekt als Filter an:
 
-`POST https://eod-catalog-svc-prod.astraea.earth/search`
+POST https://eod-catalog-svc-prod.astraea.earth/search
 
 mit folgendem Request Body:
 
@@ -148,7 +150,9 @@ Weitere Infos: [STAC Extensions](https://github.com/radiantearth/stac-spec/tree/
 
 Es existieren eine Reihe an Tools, die die Nutzung der STAC Spezifikation vereinfachen. Darunter:
 
-- STAC Browser: Browser für STAC Catalogs
-  - z.B. [Sentinel 2](https://sentinel.stac.cloud/?t=catalogs), [Landsat](https://landsat.stac.cloud/?t=catalogs)
+- [STAC Browser](https://github.com/radiantearth/stac-browser): wandelt STAC-JSON-Dokumente in interaktive HTML-Seiten um
+  - Beispiele für Catalogs im STAC Browser: [Sentinel 2](https://sentinel.stac.cloud/?t=catalogs), [Landsat](https://landsat.stac.cloud/?t=catalogs)
 - [STAC Validator](https://staclint.com/): validiert STAC JSON Files gegen die STAC Spezifikation
-- [STAC Index](https://stacindex.org/ecosystem): alle Software und Tools für STAC
+- [PySTAC](https://github.com/stac-utils/pystac): Bibliothek zum Arbeiten mit STAC Catalogs in Python
+- [sat-search](https://github.com/sat-utils/sat-search): Python 3 Bibliothek und Command Line Tool für die Suche und das Downloaden von öffentlichen Satellitenfotos durch die Nutzung von STAC API
+- [STAC Index](https://stacindex.org): Catalogs, Collections, APIs, Software und Tools für STAC finden
