@@ -6,7 +6,7 @@ Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/
 
 [LSF/QISPOS](https://studium.uni-muenster.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=324127&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
-[Learnweb course](https://xsso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=47675)
+[Learnweb course](https://sso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=47675)
 
 ## Initial training resources
 
