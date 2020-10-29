@@ -4,7 +4,7 @@ Was sind Microservices?
 -----------------------
 
 -   stammt von SOA ab (Service-orientierte Architektur)
-    -   entkoppelt Dienste und stellt sie zentral bereit  
+    -   entkoppelt Dienste und stellt sie zentral bereit
 -   Popularität nimmt stark zu
 -   dienen zur Modularisierung von Software
     -   Unterteilung in Kernfunktionen respektive Module
@@ -14,8 +14,11 @@ Was sind Microservices?
 -   Oft als RESTful APIs Implementiert
 -   Einzelne Komponenten können von Unabhängigen Teams Entwickelt werden
 
-Vorteile von einer Microservices – Architektur
-----------------------------------------------
+Quellen [Microservice - Architekcture: Mehr als die Summe ihrer
+Teile?](https://www.ionos.de/digitalguide/websites/web-entwicklung/microservice-architecture-so-funktionieren-microservices/)
+
+Vorteile einer Microservices – Architektur
+------------------------------------------
 
 -   Schnellere Markteinführung
     -   kürzere Entwicklungszeit
@@ -30,7 +33,29 @@ Vorteile von einer Microservices – Architektur
     -   leichtere Entwicklung durch Aufteilung der Anwendung in viele
         Einzelteile
 -   Mehr Offenheit
-    -   Jedes Modul kann ich einer anderen Sprache entwickelt werden
+    -   Jedes Modul kann in einer anderen Sprache entwickelt werden
+    -   Jedes Modul kann von einem Entwicklerteam unabhänig von einem
+        anderen entwickelt werden
+
+Quellen [Was sind
+Microservices?](https://www.redhat.com/de/topics/microservices/what-are-microservices)
+
+Nachteile einer Microservices – Architektur
+-------------------------------------------
+
+-   Softwareverteilung und das Testen ist aufweniger, da es eine
+    Vilezahl von Services geben kann
+-   Aufwand für die Aufteilung bestehender Programme in Microservices
+    ist hoch
+-   Höhere Wahrscheinlichkeit von ausfällen von mindestens einer
+    Komponente, da es mehrere Systeme gibt
+-   Verteilung der Architektur erzeugt zusätzliche Komplexität
+    -   z.B Lastverteilung, Latenzen oder Fehlertoleranzen
+-   Logging und Monitoring werden komplexer, da mehrere Systeme
+    involviert sind
+
+Quellen [Microservices - Verfahren, Vorteile und
+Nachteile](https://docs.docker.com/compose/)
 
 Microservices how
 -----------------
@@ -49,6 +74,8 @@ Docker Compose
 -   ist ein Tool zum definieren und ausführen von Anwendungen die aus
     mehreren Docker Containern bestehen
 -   Konfiguration in einem YAML File
+
+Quellen [Overview of Docker Compose](https://docs.docker.com/compose/)
 
 Docker Compose nutzen
 ---------------------
@@ -77,6 +104,8 @@ Docker– compose.yml
         image: redis
     volumes:
       logvolume01: {}
+
+Quellen [Overview of Docker Compose](https://docs.docker.com/compose/)
 
 Docker – compose.yml aus Geosoft 1
 ----------------------------------
@@ -107,6 +136,9 @@ Docker – compose up
 -   der Parameter -d (detached) startet die Container im Hintergrund und
     führt diese aus
 
+Quellen [docker-compose
+up](https://docs.docker.com/compose/reference/up/)
+
 Reverse-Proxy
 -------------
 
@@ -119,6 +151,9 @@ Reverse-Proxy
     weiterzuleiten
 -   er gewährt einem oder mehreren Clienten eines externen Netzes den
     Zugriff auf ein internes Netz
+
+Quellen [Reverse-Proxy-Server-Kernkomponente in
+Sicherheitsarchitekturen](https://www.ionos.de/digitalguide/server/knowhow/was-ist-ein-reverse-proxy/)
 
 Anwendungsgebiete von Reverse Proxy
 -----------------------------------
@@ -137,6 +172,27 @@ Anwendungsgebiete von Reverse Proxy
         Zugriffszeit zu ermöglichen
 -   Kompression
     -   ein und ausgehende Daten können komprimiert werden
+
+CORS: Cross – origin Resource Sharing
+-------------------------------------
+
+-   Anfragen an einen Server sollen im Normalfalls auch nur von diesem
+    beantwortet werden, CORS bildet eine Ausnahme
+-   Wie funktioniert’s?
+    -   der zweite Server muss dem ersten Server per HTTP – Header den
+        Zugriff erlauben
+    -   Im Kopf der HTTp – Antwort muss genau benannt werden welche
+        Server die Daten nachladen und dem Nutzer verfügbar machen
+        dürfen
+    -   Wildcards möglich, diese ermöglichen einen universiellen Zugriff
+-   Vorteile von CORS:
+    -   bietet Anbindung eines weiteren Servers
+-   Nachteile von CORS:
+    -   wenn zu viele Wildcards benutzt werden, kann die Same – Origing
+        – Policy ausserkraft gesetzt werden
+
+Quellen
+[CORS](https://www.ionos.de/digitalguide/websites/web-entwicklung/cross-origin-resource-sharing-erklaert/)
 
 Quellen
 -------
