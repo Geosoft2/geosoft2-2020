@@ -43,11 +43,11 @@ Microservices?](https://www.redhat.com/de/topics/microservices/what-are-microser
 Nachteile einer Microservices – Architektur
 -------------------------------------------
 
--   Softwareverteilung und das Testen ist aufweniger, da es eine
-    Vilezahl von Services geben kann
+-   Softwareverteilung und das Testen ist aufwendiger, da es eine
+    Vielezahl von Services geben kann
 -   Aufwand für die Aufteilung bestehender Programme in Microservices
     ist hoch
--   Höhere Wahrscheinlichkeit von ausfällen von mindestens einer
+-   Höhere Wahrscheinlichkeit von Ausfällen von mindestens einer
     Komponente, da es mehrere Systeme gibt
 -   Verteilung der Architektur erzeugt zusätzliche Komplexität
     -   z.B Lastverteilung, Latenzen oder Fehlertoleranzen
@@ -142,9 +142,9 @@ up](https://docs.docker.com/compose/reference/up/)
 Reverse-Proxy
 -------------
 
--   ist eine zusätzliche Schutzmaßnahme die von einen oder mehrere
+-   ist eine zusätzliche Schutzmaßnahme die vor einen oder mehrere
     Webserver geschaltet werden kann
--   die Adressumsetzung wir in der entgegengesetzten Richtung
+-   die Adressumsetzung wird in der entgegengesetzten Richtung
     durchgeführt
 -   Aufgabe des Reverse Proxies ist es Anfragen von Servern
     stellvertretend anzunehmen und an den entsprechenden Clitenten
@@ -160,18 +160,85 @@ Anwendungsgebiete von Reverse Proxy
 
 -   Anonymisierung
     -   da der Proxy-Server zwischen dem Backend – Server und dem Client
-        Server steht bleibt der Backend – Server anonym
+        Server steht, bleibt der Backend – Server anonym
 -   Schutz und Verschlüsselung
     -   bietet die Möglichkeit ein Kontrollsystem vor dem Backend zu
         integrieren
 -   Load – Balancing
-    -   das Reverse – Proxy vertetill die Anfragen gleichmäßig auf alle
+    -   das Reverse – Proxy verteilt die Anfragen gleichmäßig auf alle
         Server
 -   Caching
     -   speichert häufig gefragte Daten zwischen um eine schnellere
         Zugriffszeit zu ermöglichen
 -   Kompression
     -   ein und ausgehende Daten können komprimiert werden
+
+Beispiel zu Reverse Proxy
+-------------------------
+
+    version: '3'
+    services:
+      frontproxy:
+       image: jwilder/nginx-proxy:latest
+       container_name: frontproxy
+       restart: always
+       environment:
+         DEFAULT_HOST: default.vhost
+       ports:
+         - "80:80"
+         - "443:443"
+       volumes:
+         - ./Config/nginx.conf:/etc/nginx/nginx.conf
+         - /var/run/docker.sock:/tmp/docker.sock:ro
+      app:
+       image: legen26/geosoftproject:latest
+       container_name: app
+       depends_on:
+         - mongodbservice
+       ports:
+         - 8080:80
+      mongodbservice:
+       image: mongo:latest # to be retrieved from dockerhub
+       expose:
+         - 27017
+       volumes:
+         - /data/db
+       environment:
+         MONGO_INITDB_ROOT_USERNAME: root
+         MONGO_INITDB_ROOT_PASSWORD: rootpassword
+
+-   Neben der eigentlichen Anwendung wurde im Docker–Compose File nginx
+    hinzugefügt
+-   die config wurde manuel festgelegt
+-   Portweiterleitung von 80 auf 80 und 443 auf 443
+
+<!-- -->
+
+    include /etc/nginx/modules-enabled/*.conf;
+    events {
+        worker_connections 1024;
+    }
+    http {
+      server {
+        listen 80;
+        server_name localhost 127.0.0.1;
+
+        location / {
+            proxy_pass https://app:80/;
+            proxy_set_header X-Forwarded-For $remote_addr;
+        }
+
+      }
+
+    }
+
+-   Config Datei
+
+-   Datenbankserver ist nicht hinterm Proxy versteck, sondern nur die
+    APP
+
+Quellen [Docker and Nginx Reverse
+Proxy](https://www.youtube.com/watch?v=hxngRDmHTM0)
 
 CORS: Cross – origin Resource Sharing
 -------------------------------------
@@ -208,3 +275,5 @@ Quellen
 -   [docker-compose up](https://docs.docker.com/compose/reference/up/)
 -   [Reverse-Proxy-Server-Kernkomponente in
     Sicherheitsarchitekturen](https://www.ionos.de/digitalguide/server/knowhow/was-ist-ein-reverse-proxy/)
+-   [Docker and Nginx Reverse
+    Proxy](https://www.youtube.com/watch?v=hxngRDmHTM0)
