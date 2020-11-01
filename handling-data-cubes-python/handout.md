@@ -90,7 +90,7 @@ Um eine neue nc-File anzulegen, wird auf die Methode Dataset zugegriffen. Die Da
 
 Die Python-Biebliothek cf_xarray dient der Interpretation von CF(Climate and Forcast)-Attributen, welche auf einem xarray-Objekt gespeichert sein können. Cf stellt ein paar Grundlegende Informationen zur Verfügung. *Title*: gibt Informationen darüber, was in der Datei gespeichert ist, *institution*: enthält Informationen daüber wo dieser hergestellt wurde, *source*: beschreibt wie es hergestellt (model version, instrument type etc.) wurde, *history*: Verlauf der ausgeführten Operationen, *references*: Verknüpfungen oder Web-Dokumentationen und in *comment* können unterschiedliche weitere Informationen enthalten sein. [cf-Conventions](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf)
 
-Das package kann mit anaconda installiert werden
+Das Package kann mit anaconda installiert werden.
 ```
 conda install cf_xarray
 ```
