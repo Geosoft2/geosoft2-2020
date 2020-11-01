@@ -6,7 +6,7 @@
 ## Was ist OpenEO
 
 Moderne GeoDaten sind zu groß um sie auf den eigenen PC zu laden und zu analysieren.
- Die Art und Weise wie wir Geoinformatik in DigiKarto oder dem GIS-Grundkurs gemacht haben (Analyse einzelner Kartenabschnitte zu statischen Zeitpunkten) ist nicht wirklich praktikabel.
+Die Art und Weise wie wir Geoinformatik in DigiKarto oder dem GIS-Grundkurs gemacht haben (Analyse einzelner Kartenabschnitte zu statischen Zeitpunkten) ist nicht wirklich praktikabel.
 Die Lösung ist GeoDaten in "der Cloud" (*someone else's bigger computer*/Server) zu **speichern**, im *back-end* zu **verarbeiten**, zu **betrachten** und dann entsprechende Ergebnisse **herunterzuladen**.
 
 ## API
@@ -16,7 +16,8 @@ Eine API definiert eine Sprache, mit der Client und Server untereinander kommuni
 Problem: Server von unterschiedlichen Anbietern "sprechen" unterschiedliche Sprachen und Clients sowieso.
 
 OpenEO ist ein Projekt zur Schaffung einer gemeinsamen Sprache/Schnittstelle für verschiedene GeoDaten-Server und zur Vereinfachung der Zugriffe auf diese Server mit unterschiedlichen Clients.
-![Structure with openEO](https://openeo.org/images/api2.png)[Link zur OpenEO Website und den Grafiken](https://openeo.org/about.html#openeo)
+![Structure with openEO](https://openeo.org/images/api2.png)
+[Link zur OpenEO Website und den Grafiken](https://openeo.org/about.html#openeo)
 
 
 ### Funktionsumfang der openEO-API
@@ -33,6 +34,7 @@ OpenEO ist ein Projekt zur Schaffung einer gemeinsamen Sprache/Schnittstelle fü
  - JavaScript
  - QGIS
  - WebEditor [(Browser)](https://open-eo.github.io/openeo-web-editor/demo/) 
+
 ### Beispielcode
 Aus dem **[openeo-earthengine-driver](https://github.com/Open-EO/openeo-earthengine-driver)** git-repo
 Ein von einem beliebigen Client bereits durch die API prozessierter Code könnte so aussehen:
@@ -135,6 +137,7 @@ Ein von einem beliebigen Client bereits durch die API prozessierter Code könnte
         }
       }
     }
+
 Und würde dann für einen Server weiter übersetzt werden.
 Im WebEditor lässt sich der Code auch als *Visual Model* darstellen/verändern
 ## Hub
