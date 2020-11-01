@@ -33,7 +33,7 @@ Ndarrays sind mehrdimensionale, homogene Datenstrukturen. Die Anzahl der Dimensi
 
 ## XArray
 
-Die Python Bibliothek xarry verbindet die Vorteile von numpy und pandas (Tabellendatenstruktur mit Zugriff über Spalten und Zeilennamen). Xarry erleichert das Arbeiten mit mehrdimensionalen Arrays durch Einführung eines Lable-Systems. So können Beschriftungen in Form von Dimensionen, Koordinaten und Attributen hinzugefügt werden, wodurch das Arbeiten intuitiver und weniger fehleranfällig ist. Sowohl einzelne Arrays können so über Namen ausgewählt und kombiniert, aber auch Daten entlang einer Dimension über mehrere Arrays können so ausgewählt und kombiniert werden. Weiterhin lassen sich auch  netCDF-Ein-und Ausgaben damit realisieren, sowie das Plotten von den Daten.
+Die Python Bibliothek xarray verbindet die Vorteile von numpy und pandas (Tabellendatenstruktur mit Zugriff über Spalten und Zeilennamen). Xarray erleichert das Arbeiten mit mehrdimensionalen Arrays durch Einführung eines Lable-Systems. So können Beschriftungen in Form von Dimensionen, Koordinaten und Attributen hinzugefügt werden. Dadurch kann auf einzelne Attribute anhand eines Lables zugegriffen werden, wodurch der weniger intuitive Zugriff über Indices erspart bleibt. Somit können Fehler (z.B. ein flascher Index-Zugriff) vermieden werden. Sowohl einzelne Arrays können so über Namen ausgewählt und kombiniert, aber auch Daten entlang einer Dimension über mehrere Arrays können so ausgewählt und kombiniert werden. Weiterhin lassen sich auch netCDF-Ein-und Ausgaben damit realisieren, sowie das Plotten von den Daten.
 
  #### Erstellen eines xarrys
  ```python
