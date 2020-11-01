@@ -13,9 +13,7 @@ Um die verschiedenen Packages auszuprobieren habe ich Anaconda benutzt.
 
 Data Cubes oder auch OLAP-Würfel (**O**n**l**ine **a**nalytical **p**rocessing) sind eine Methode um Daten multidimensional zu Speichern. Dabei enthält jede Zelle Fakten, welche eindeutig durch die Relation meherer Dimensionen und deren Merkmale bestimmbar und abrufbar sind. Dies ermöglicht die Betrachtung der Daten aus verschiedenen Perspektiven und in unterschiedlichen Detaillierungsgraden.  Die Datenstruktur erlaubt beliebig viele Dimensionen. Häufig wird ein konkreter Wert mit den dazugehörigen Koordinaten gespeichert (3D), aber auch die Zeitliche Komponente gewinnt immer mehr an bedeutung. [Quelle](https://www.datenbanken-verstehen.de/data-warehouse/olap-grundlagen/olap-cube/)
 
-[Mehrdimensionaler Data Cube](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)
 
-![Image of Data Cube System](https://miro.medium.com/max/875/1*oIyi7fqvyjIwEw49XkMFig.png)
 
 
 ## NumPy - Numerical Python
@@ -73,6 +71,10 @@ Hierbei wird bei der Erstellung über den Parameter *shape* die Größe des mehr
 
 Hierbei handelt es sich um eine Softwarebibliothek, die maschienenunabhängige Datenformate für die gemeinsame Nutzung von Array-orientierten wissenschaftlichen Daten unterstüzt. Neben den Daten, können auch Informationen über diese dort gespeichert werden. Weiterhin ist es möglich auch nur mit kleinen Teilmengen des großen Datensets zu arbeiten und auch von Remote-Servern darauf zuzugreifen.
 [netCDF4 Dokumentation](http://unidata.github.io/netcdf4-python/netCDF4/index.html)
+
+[Mehrdimensionaler Datenstruktur](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)
+
+![Image of netCDF](https://miro.medium.com/max/875/1*oIyi7fqvyjIwEw49XkMFig.png)
 
 #### Erstellen einer netCDF-File
 ```
