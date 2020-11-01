@@ -10,7 +10,8 @@
 ## Data Cubes - mehrdimensionale Datenbanken
 Data Cubes oder auch OLAP-Würfel (**O**n**l**ine **a**nalytical **p**rocessing) sind eine Methode um Daten multidimensional zu Speichern.
 Dabei enthält jede Zelle Fakten, welche eindeutig durch die Relation meherer Dimensionen und deren Merkmale bestimmbar und abrufbar sind. Dies ermöglicht die Betrachtung der
-Daten aus verschiedenen Perspektiven und in unterschiedlichen Detaillierungsgraden.  Die Datenstruktur erlaubt beliebig viele Dimensionen, wird aber meistens nur 3D genutzt. 
+Daten aus verschiedenen Perspektiven und in unterschiedlichen Detaillierungsgraden.  Die Datenstruktur erlaubt beliebig viele Dimensionen. Häufig wird ein konkreter Wert mit den dazugehörigen Koordinaten gespeichert (3D), aber auch die Zeitliche Komponente gewinnt immer mehr an bedeutung. [Quelle](https://www.datenbanken-verstehen.de/data-warehouse/olap-grundlagen/olap-cube/)
+![Image of Data Cube System](https://miro.medium.com/max/875/1*oIyi7fqvyjIwEw49XkMFig.png)
     
 ## NumPy - Numerical Python
 *„The fundamental package for scientific computing with Python”*
