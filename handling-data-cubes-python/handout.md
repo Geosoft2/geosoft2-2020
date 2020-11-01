@@ -7,6 +7,7 @@
 * netCDF4
 * cf_xarray
 
+Um die verschiedenen Packages auszuprobieren habe ich Anaconda benutzt.
 
 ## Data Cubes - mehrdimensionale Datenbanken
 
@@ -23,6 +24,9 @@ Data Cubes oder auch OLAP-Würfel (**O**n**l**ine **a**nalytical **p**rocessing)
 Numpy ist eine Python Bibliothek  zum Arbeiten mit Arrays, Funktionen der linearen Algebra und Matritzen. Sollen komplexere Statistische Analysen aufgestellt werden, geht dies meist über die Funktionen der numpy Bibliothek hinaus. Dann lässt sich die [SciPy-Bibliothek](https://www.scipy.org/scipylib/index.html) empfehlen. Auch ist das Plotten von Arrays mit numpy nicht möglich. Sollen die Ergebnisse oder Daten dargestellt werden, kann man die [matplotlib-Bibliothek](https://matplotlib.org/), welche mithilfe der [Cartopy-Bibliothek](https://scitools.org.uk/cartopy/docs/latest/) auch Kartenprojektionen erstellt oder für dynamische Plots die [Bokeh-Bibliothek](https://docs.bokeh.org/en/latest/) verwenden. Array-Objekte von Numpy sind eine schnellere Alternative als die von Python zur verfügunggestellte Listenstruktur. Durch Verwendung kontinuierlicher Speicherstellen ist eine effizientere und schnellere Verarbeitung möglich. 
   
 #### Erstellen eines ndarrays
+```
+conda install numpy
+```
 ```python
 class numpy.ndarray (shape, dtype=float, buffer=None, offset=0, strides=None, order=None)
  ```
@@ -36,6 +40,9 @@ Ndarrays sind mehrdimensionale, homogene Datenstrukturen. Die Anzahl der Dimensi
 Die Python Bibliothek xarray verbindet die Vorteile von numpy und pandas (Tabellendatenstruktur mit Zugriff über Spalten und Zeilennamen). Xarray erleichert das Arbeiten mit mehrdimensionalen Arrays durch Einführung eines Lable-Systems. So können Beschriftungen in Form von Dimensionen, Koordinaten und Attributen hinzugefügt werden. Dadurch kann auf einzelne Attribute anhand eines Lables zugegriffen werden, wodurch der weniger intuitive Zugriff über Indices erspart bleibt. Somit können Fehler (z.B. ein flascher Index-Zugriff) vermieden werden. Sowohl einzelne Arrays können so über Namen ausgewählt und kombiniert, aber auch Daten entlang einer Dimension über mehrere Arrays können so ausgewählt und kombiniert werden. Weiterhin lassen sich auch netCDF-Ein-und Ausgaben damit realisieren, sowie das Plotten von den Daten.
 
  #### Erstellen eines xarrys
+ ```
+conda install -c conda-forge xarray
+```
  ```python
 class xarray.DataArray(data=<NA>, coords=None, dims=None, name=None, attrs=None, indexes=None, fastpath=False)
   ```
@@ -50,6 +57,9 @@ Die im Array repräsentierten Daten werden über den Parameter *data* übergeben
 Die Python Bibliothek Zarr dient der Speicherung von Daten in komprimierten Abschnitten (chunks), in n-dimensionalen Arrays. Es wird das Erstellen von multidimensionalen Arrays mit beliebigen numpy-dtype ermöglicht. Dabei kann entlang jeder Dimension ein Chunk-Array erstellt werden. Diese können komprimiert und/oder gefiltert mit einem beliebigen NumCodecs-Codec weiterverwendet werden. Auch das Speichern auf der Festplatte, in Zip-Datein ... ist möglich. Zusätzlich ist das Organisieren über Gruppen und Hiearachien häufig nützlich. 
 
 #### Erstellen eines zarr's
+```
+conda install -c conda-forge zarr
+```
 ```python
 zarr.creation.create (shape, chunks=True, dtype=None, compressor='default', fill_value=0, order='C', store=None, synchronizer=None, overwrite=False, path=None , chunk_store=None, filters=None, cache_metadata=True , cache_attrs=True, read_only=False, object_codec=None)
 ```
@@ -65,6 +75,9 @@ Hierbei handelt es sich um eine Softwarebibliothek, die maschienenunabhängige D
 [netCDF4 Dokumentation](http://unidata.github.io/netcdf4-python/netCDF4/index.html)
 
 #### Erstellen einer netCDF-File
+```
+conda install -c conda-forge netCDF4
+```
 ```python
 netCDF4.Dataset('name.nc','w', format='NETCDF4')
 ```
@@ -76,6 +89,11 @@ Um eine neue nc-File anzulegen, wird auf die Methode Dataset zugegriffen. Die Da
 ## cf_xarray
 
 Die Python-Biebliothek cf_xarray dient der Interpretation von CF(Climate and Forcast)-Attributen, welche auf einem xarray-Objekt gespeichert sein können. Cf stellt ein paar Grundlegende Informationen zur Verfügung. *Title*: gibt Informationen darüber, was in der Datei gespeichert ist, *institution*: enthält Informationen daüber wo dieser hergestellt wurde, *source*: beschreibt wie es hergestellt (model version, instrument type etc.) wurde, *history*: Verlauf der ausgeführten Operationen, *references*: Verknüpfungen oder Web-Dokumentationen und in *comment* können unterschiedliche weitere Informationen enthalten sein. [cf-Conventions](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf)
+
+Das package kann mit anaconda installiert werden
+```
+conda install cf_xarray
+```
 
 Mithilfe von .cf.describe können die Variablen Namen ausgegeben werden. 
 
