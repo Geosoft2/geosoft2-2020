@@ -3,16 +3,16 @@
 Was sind Microservices?
 -----------------------
 
--   stammt von SOA ab (Service-orientierte Architektur)
+-   Stammt von SOA ab (Service-orientierte Architektur)
     -   entkoppelt Dienste und stellt sie zentral bereit
 -   Popularität nimmt stark zu
--   dienen zur Modularisierung von Software
+-   Dienen zur Modularisierung von Software
     -   Unterteilung in Kernfunktionen respektive Module
--   wird unabhängig von anderen Services ausgeführt
--   In der regel umgesetzt durch Docker Container
+-   Wird unabhängig von anderen Services ausgeführt
+-   In der Regel umgesetzt durch Docker Container
     -   Jeder Service bekommt eigenen Container
 -   Oft als RESTful APIs Implementiert
--   Einzelne Komponenten können von Unabhängigen Teams Entwickelt werden
+-   Einzelne Komponenten können von unabhängigen Teams Entwickelt werden
 
 Quellen [Microservice - Architekcture: Mehr als die Summe ihrer
 Teile?](https://www.ionos.de/digitalguide/websites/web-entwicklung/microservice-architecture-so-funktionieren-microservices/)
@@ -25,7 +25,7 @@ Vorteile einer Microservices – Architektur
 -   Hochgradig skalierbar
     -   Serverstruktur kann schnell an den Bedarf angepasst werden
 -   Robustheit
-    -   wenn ein Microservice ausfällt, stürzt nicht die gesamte
+    -   Wenn ein Microservice ausfällt, stürzt nicht die gesamte
         Anwendung ab
 -   Einfache Implementierung
     -   neue Entwicklungsansätze werden ermöglicht
@@ -34,7 +34,7 @@ Vorteile einer Microservices – Architektur
         Einzelteile
 -   Mehr Offenheit
     -   Jedes Modul kann in einer anderen Sprache entwickelt werden
-    -   Jedes Modul kann von einem Entwicklerteam unabhänig von einem
+    -   Jedes Modul kann von einem Entwicklerteam unabhängig von einem
         anderen entwickelt werden
 
 Quellen [Was sind
@@ -44,7 +44,7 @@ Nachteile einer Microservices – Architektur
 -------------------------------------------
 
 -   Softwareverteilung und das Testen ist aufwendiger, da es eine
-    Vielezahl von Services geben kann
+    Vielzahl von Services geben kann
 -   Aufwand für die Aufteilung bestehender Programme in Microservices
     ist hoch
 -   Höhere Wahrscheinlichkeit von Ausfällen von mindestens einer
@@ -60,10 +60,10 @@ Nachteile](https://docs.docker.com/compose/)
 Microservices how
 -----------------
 
--   Microservices sind untereineander isoliert und laufen in einer
+-   Microservices sind untereinander isoliert und laufen in einer
     eigenen Umgebung
     -   Umsetzung in der Regel durch Container (Bspw. Docker)
-    -   Alternativ durch Virtuelle Maschinen
+    -   Alternativ durch virtuelle Maschinen
 -   Zusammensetzen mehrer einzelner Container/Anwendungen über Docker
     Compose
 -   Die einzelnen Services kommunizieren nur über Schnittstellen
@@ -71,7 +71,7 @@ Microservices how
 Docker Compose
 --------------
 
--   ist ein Tool zum definieren und ausführen von Anwendungen die aus
+-   Ist ein Tool zum Definieren und Ausführen von Anwendungen, die aus
     mehreren Docker Containern bestehen
 -   Konfiguration in einem YAML File
 
@@ -81,8 +81,8 @@ Docker Compose nutzen
 ---------------------
 
 -   es werden 3 Schritte ausgeführt
-    1.  definiert man sich eine Umgebung mit Hilfe eines Dockerfiles
-    2.  definiert man sich die einzelnen Services in der docker –
+    1.  Definiert man sich eine Umgebung mithilfe eines Dockerfiles
+    2.  Definiert man sich die einzelnen Services in der docker –
         compose.yml, welche die spätere Anwendung darstellt
     3.  führe docker– compose up aus
 
@@ -131,9 +131,9 @@ Docker – compose.yml aus Geosoft 1
 Docker – compose up
 -------------------
 
--   der Befehl docker-compose up erstellt die Ausgabe jedes Containers
+-   Der Befehl docker-compose up erstellt die Ausgabe jedes Containers
     -   wenn der Befehl beendet wird, werden alle Container gestoppt
--   der Parameter -d (detached) startet die Container im Hintergrund und
+-   Der Parameter -d (detached) startet die Container im Hintergrund und
     führt diese aus
 
 Quellen [docker-compose
@@ -142,14 +142,14 @@ up](https://docs.docker.com/compose/reference/up/)
 Reverse-Proxy
 -------------
 
--   ist eine zusätzliche Schutzmaßnahme die vor einen oder mehrere
+-   Ist eine zusätzliche Schutzmaßnahme, die vor einen oder mehrere
     Webserver geschaltet werden kann
--   die Adressumsetzung wird in der entgegengesetzten Richtung
+-   Die Adressumsetzung wird in der entgegengesetzten Richtung
     durchgeführt
 -   Aufgabe des Reverse Proxies ist es Anfragen von Servern
-    stellvertretend anzunehmen und an den entsprechenden Clitenten
+    stellvertretend anzunehmen und an den entsprechenden Klienten
     weiterzuleiten
--   er gewährt einem oder mehreren Clienten eines externen Netzes den
+-   Er gewährt einem oder mehreren Klienten eines externen Netzes den
     Zugriff auf ein internes Netz
 
 Quellen [Reverse-Proxy-Server-Kernkomponente in
@@ -168,7 +168,7 @@ Anwendungsgebiete von Reverse Proxy
     -   das Reverse – Proxy verteilt die Anfragen gleichmäßig auf alle
         Server
 -   Caching
-    -   speichert häufig gefragte Daten zwischen um eine schnellere
+    -   speichert häufig gefragte Daten , um eine schnellere
         Zugriffszeit zu ermöglichen
 -   Kompression
     -   ein und ausgehende Daten können komprimiert werden
@@ -209,7 +209,7 @@ Beispiel zu Reverse Proxy
 
 -   Neben der eigentlichen Anwendung wurde im Docker–Compose File nginx
     hinzugefügt
--   die config wurde manuel festgelegt
+-   Die config wurde manuell festgelegt
 -   Portweiterleitung von 80 auf 80 und 443 auf 443
 
 <!-- -->
@@ -233,17 +233,33 @@ Beispiel zu Reverse Proxy
     }
 
 -   Config Datei
-
 -   Datenbankserver ist nicht hinterm Proxy versteck, sondern nur die
     APP
 
 Quellen [Docker and Nginx Reverse
 Proxy](https://www.youtube.com/watch?v=hxngRDmHTM0)
 
+Load Balancing
+--------------
+
+    upstream myapp1 {
+            server srv1.example.com;
+            server srv2.example.com;
+            server srv3.example.com;
+    }
+
+-   Muss im HTTP – Teil der Config ergänzt werden
+-   Loadbalancing ist eine häufig verwendete Technik zur Optimierung der
+    Ressourcennutzung, zur Reduzierung der Latenz und zur Gewährleistung
+    fehlertoleranter Konfigurationen
+
+Quellen [Using nginx as HTTP load
+balancer](http://nginx.org/en/docs/http/load_balancing.html)
+
 CORS: Cross – origin Resource Sharing
 -------------------------------------
 
--   Anfragen an einen Server sollen im Normalfalls auch nur von diesem
+-   Anfragen an einen Server sollen im Normalfall auch nur von diesem
     beantwortet werden, CORS bildet eine Ausnahme
 -   Wie funktioniert’s?
     -   der zweite Server muss dem ersten Server per HTTP – Header den
@@ -251,12 +267,12 @@ CORS: Cross – origin Resource Sharing
     -   Im Kopf der HTTp – Antwort muss genau benannt werden welche
         Server die Daten nachladen und dem Nutzer verfügbar machen
         dürfen
-    -   Wildcards möglich, diese ermöglichen einen universiellen Zugriff
+    -   Wildcards möglich, diese ermöglichen einen universellen Zugriff
 -   Vorteile von CORS:
     -   bietet Anbindung eines weiteren Servers
 -   Nachteile von CORS:
     -   wenn zu viele Wildcards benutzt werden, kann die Same – Origing
-        – Policy ausserkraft gesetzt werden
+        – Policy Außerkraft gesetzt werden
 
 Quellen
 [CORS](https://www.ionos.de/digitalguide/websites/web-entwicklung/cross-origin-resource-sharing-erklaert/)
