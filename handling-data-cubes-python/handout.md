@@ -72,7 +72,7 @@ Hierbei wird bei der Erstellung über den Parameter *shape* die Größe des mehr
 Hierbei handelt es sich um eine Softwarebibliothek, die maschienenunabhängige Datenformate für die gemeinsame Nutzung von Array-orientierten wissenschaftlichen Daten unterstüzt. Neben den Daten, können auch Informationen über diese dort gespeichert werden. Weiterhin ist es möglich auch nur mit kleinen Teilmengen des großen Datensets zu arbeiten und auch von Remote-Servern darauf zuzugreifen.
 [netCDF4 Dokumentation](http://unidata.github.io/netcdf4-python/netCDF4/index.html)
 
-[Mehrdimensionaler Datenstruktur](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)
+[Mehrdimensionale Datenstruktur](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)
 
 ![Image of netCDF](https://miro.medium.com/max/875/1*oIyi7fqvyjIwEw49XkMFig.png)
 
