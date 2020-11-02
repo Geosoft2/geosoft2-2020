@@ -1,3 +1,4 @@
+
 # Handout: "OpenEO API, Clients, Hub"
 
 @FelixGI1516
@@ -27,9 +28,12 @@ OpenEO ist ein Projekt zur Schaffung einer gemeinsamen Sprache/Schnittstelle fü
  - Autentifizierung
  - Workflow management und User-definierte Prozesse
  - Filemanagement
+	 - zB das [Laden](https://processes.openeo.org/#load_collection) einer collection
  - DataProcessing (Synchron und via Batchjobs)
+	 - zB Berechnung des [ndvi](https://processes.openeo.org/#ndvi)
  - Webservice und Export
- - [Link zur OpenEO Dokumentation](https://openeo.org/documentation/1.0/developers/api/reference.html)
+ - [Link zur API Dokumentation](https://openeo.org/documentation/1.0/developers/api/reference.html)
+ - [Link zur processes Dokumentation](https://processes.openeo.org/)
 
 ## Clients
 
