@@ -32,29 +32,28 @@ Verwenden von parallel arbeitenden Algorithmen
 
 OpenMP
 
-      Shared-Memory
+- Shared-Memory
 
-      Schleifen werden auf unterschiedliche Prozesse aufgeteilt
+- Schleifen werden auf unterschiedliche Prozesse aufgeteilt
 
 MPI (Message Passing Interface)
 
-      Unabhänige Prozesse kommunizieren miteinander
+- Unabhänige Prozesse kommunizieren miteinander
 
-      Implementierungen:
+- Implementierungen:
 
-      MPICH
+- MPICH
 
-      MVAPICH
+- MVAPICH
 
-      Boost
+- Boost
 
-      TPO++
+- TPO++
 
 PVM (parallel virtual machine)
+- Bündelung von Computern gleicher Hardware zu einer Ressource
 
-      Bündelung von Computern gleicher Hardware zu einer Ressource
-
-      Kommunikation via Netzwerk
+- Kommunikation via Netzwerk
 
 [http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/](http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/)
 
@@ -94,25 +93,28 @@ https://ieeexplore.ieee.org/abstract/document/7740234
 
 **Dask**
 
-Python(NumPy und Pandas)
+- Python(NumPy und Pandas)
 
-Open-Source Library
+- Open-Source Library
 
-Rechenaufgaben auf verschiedene PCs (Worker) aufteilen und parallel abarbeiten
+- Rechenaufgaben auf verschiedene PCs (Worker) aufteilen und parallel abarbeiten
 
-Alternative: Apache Spark (SQL)
+- Alternative: Apache Spark (SQL)
 
-Anwendungen:
+- Anwendungen:
 
-- High Performance Computing
+  - High Performance Computing
 
-- Maschinelles Lernen und Künstliche Intelligenz
+  - Maschinelles Lernen und Künstliche Intelligenz
 
-- Modellberechnungen
+  - Modellberechnungen
 
 **Exemplarisch, wie geht DASK:**
 
-*Zur Installation*: pip install dask[complete]
+*Zur Installation*: 
+```powershell
+pip install dask[complete]
+```
 
 *Task Scheduler/Worker zusweisung:*
 
@@ -128,7 +130,8 @@ dask-worker tcp://192.168.178.23:8786 ### [TCP von Dask-scheduler Maschine, z.B.
 
 *Import von Daten:*
 
-```pythonimport dask.dataframe as dd
+```python
+import dask.dataframe as dd
 
 df = dd.read\_csv(...)
 
