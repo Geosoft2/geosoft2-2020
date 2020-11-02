@@ -32,29 +32,29 @@ Verwenden von parallel arbeitenden Algorithmen
 
 OpenMP
 
-Shared-Memory
+      Shared-Memory
 
-Schleifen werden auf unterschiedliche Prozesse aufgeteilt
+      Schleifen werden auf unterschiedliche Prozesse aufgeteilt
 
 MPI (Message Passing Interface)
 
-Unabhänige Prozesse kommunizieren miteinander
+      Unabhänige Prozesse kommunizieren miteinander
 
-Implementierungen:
+      Implementierungen:
 
-MPICH
+      MPICH
 
-MVAPICH
+      MVAPICH
 
-Boost
+      Boost
 
-TPO++
+      TPO++
 
 PVM (parallel virtual machine)
 
-Bündelung von Computern gleicher Hardware zu einer Ressource
+      Bündelung von Computern gleicher Hardware zu einer Ressource
 
-Kommunikation via Netzwerk
+      Kommunikation via Netzwerk
 
 [http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/](http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/)
 
@@ -112,15 +112,15 @@ Anwendungen:
 
 **Exemplarisch, wie geht DASK:**
 
-Zur Installation: pip install dask[complete]
+*Zur Installation*: pip install dask[complete]
 
-Task Scheduler/Worker zusweisung:
+*Task Scheduler/Worker zusweisung:*
 
-Auf Scheduler Maschine(aus den Informationen Adresse kopieren): Dask-scheduler
+*Auf Scheduler Maschine(aus den Informationen Adresse kopieren):* Dask-scheduler
 
 Auf (allen) Worker Maschienen: dask-worker [TCP von Dask-scheduler Maschine, z.B. tcp://192.168.178.23:8786]
 
-Import von Daten:
+*Import von Daten:*
 
 import dask.dataframe as dd
 
@@ -132,9 +132,9 @@ client = Client(tcp://192.168.178.23:8786)
 
 df.x.sum().compute()
 
-ODER
+*ODER*
 
-Mit Anlegen von Testdaten:
+*Mit Anlegen von Testdaten:*
 
 Import dask.array as da
 
