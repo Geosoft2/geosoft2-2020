@@ -116,13 +116,19 @@ Anwendungen:
 
 *Task Scheduler/Worker zusweisung:*
 
-*Auf Scheduler Maschine(aus den Informationen Adresse kopieren):* Dask-scheduler
+*Auf Scheduler Maschine(aus den Informationen Adresse kopieren):*
+```python 
+Dask-scheduler
+```
 
-Auf (allen) Worker Maschienen: dask-worker [TCP von Dask-scheduler Maschine, z.B. tcp://192.168.178.23:8786]
+Auf (allen) Worker Maschienen:
+```python 
+dask-worker tcp://192.168.178.23:8786 ### [TCP von Dask-scheduler Maschine, z.B. tcp://192.168.178.23:8786]
+```
 
 *Import von Daten:*
 
-import dask.dataframe as dd
+```pythonimport dask.dataframe as dd
 
 df = dd.read\_csv(...)
 
@@ -131,12 +137,15 @@ from dask.distributed import Client
 client = Client(tcp://192.168.178.23:8786)
 
 df.x.sum().compute()
+```
 
 *ODER*
 
 *Mit Anlegen von Testdaten:*
 
+```python
 Import dask.array as da
+
 
 x= da.random.random((5000,5000) chunks=(1000,1000))
 
@@ -147,5 +156,6 @@ from dask.distributed import Client
 client = Client(tcp://192.168.178.23:8786)
 
 y.compute()
+```
 
 https://docs.dask.org/en/latest/\_downloads/283ae48258d4a12e74080caf194279cb/daskcheatsheet.pdf
