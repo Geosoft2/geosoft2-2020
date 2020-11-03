@@ -7,7 +7,7 @@
 * netCDF4
 * cf_xarray
 
-Um die verschiedenen Packages auszuprobieren habe ich Anaconda benutzt.
+Um die verschiedenen Packages auszuprobieren habe ich Anaconda benutzt. Dabei ist mir aufgefallen, dass es manchmal entscheidend ist in welcher Reihenfolge die jeweiligen Packages und aus welchem Channel diese installiert werden.  
 
 ## Data Cubes - mehrdimensionale Datenbanken
 
