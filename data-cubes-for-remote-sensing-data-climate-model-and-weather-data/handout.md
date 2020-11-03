@@ -1,7 +1,7 @@
 # Datenwürfel für Fernerkundungsdaten, Klimamodelle und Wetterdaten
 @neli98
 
-## Datenwürfel allgemein
+## 1. Datenwürfel allgemein
 * auch bekannt als OLAP-Würfel (OLAP = Online Analytical Processing) [2]
 * relevant im Bereich des Data-Warehousing [1]
 * nützlich zur Strukturierung von Daten (Big Data) [1]
@@ -16,9 +16,9 @@
 ![Data Cube](https://images.tecchannel.de/bdb/362924/840x473.jpg)
 
 
-## Datenwürfel im Kontext der Geoinformatik
+## 2. Datenwürfel im Kontext der Geoinformatik
 
-### Anwendungsfälle
+### 2.1 Anwendungsfälle
 * hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - speziell Earth Observation(EO)-Daten [3]
   * speziell bei Daten mit zeitlicher Dimension
   * Schnittstelle zwischen Daten und Nutzeranwendungen
@@ -29,7 +29,7 @@
   * Wetterentwicklungen [4]
 
 
-### Beispiele
+### 2.2 Beispiele
 * Open Data Cube ([mehr Informationen](https://www.opendatacube.org))
   * internationale Open-Source Initiative
   * freie Bereitstellung von EO-Daten
@@ -47,7 +47,7 @@
 
 
 
-### Vorteile und Möglichkeiten
+### 2.3 Vorteile und Möglichkeiten
 * Bereitstellung eines zentralen Datenpools [3]
 * flexibler Zugriff auf ausgewählte Datenausschnitte [5]
 * Zugriff auf *Analysis Ready Data (ARD)* [3]
@@ -57,14 +57,14 @@
 * breite Verwendbarkeit der Daten durch standardisierten Abruf über z.B. OGC Web Coverage Service (WCS) [6]
 
 
-### Nachteile und Herausforderungen
+### 2.4 Nachteile und Herausforderungen
 * Bildung von Datenwürfeln aufgrund großer Datenmengen oftmals zeitaufwendig [7]
 * Vorstrukturierung der Daten notwendig [3]
 * Performance abhängig von Datenmengen [5]
 * Akzeptanz und Skalierbarkeit [3]
 
 
-## Quellen
+## 3. Quellen
 
 * [1] https://www.techopedia.com/definition/28530/data-cube
 * [2] https://www.guru99.com/online-analytical-processing.html
