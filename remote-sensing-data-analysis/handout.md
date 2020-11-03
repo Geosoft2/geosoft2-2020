@@ -8,7 +8,8 @@ Geodaten, üblicherweise Luftaufnahmen
 - 2 verschiedene Formate:
 	- Rasterdaten
 	- Vektordaten
-
+Um die Unterschiede zu verdeutlichen kann die folgende Grafik dienen:
+https://slideplayer.org/slide/13329129/80/images/5/Vektor-+und+Rasterdaten.jpg
 
 Für Rasterdaten werden hauptsächlich vier Auflösungsdimensionen berücksichtigt:
 	- zeitlich (Variationen, z.B. Herbst/Frühling)
@@ -43,28 +44,40 @@ expliziete Beispiele:
 	- Erkennen von Vegatation
 	- Erstellen von Karten
 
+https://ivvgeo.uni-muenster.de/vorlesung/FE_Script/1_2.html
 
 **Verarbeitung und Verbreitung von Fernerkundsungsdaten**
 
 Verarbeitungsschritte:
 	- Digitalisieren der Sensordaten zu "Bildern" 
-	- Preprocessing der Rohdaten (Korrekturen)
-	- Automatisierte Prozesse 
+	- Preprocessing der Rohdaten (Korrekturen der Rohdaten)
+	- Automatisierte Prozesse (z.B. für Satellietengestütze Karten)
 	- manuelle Verarbeitung in GIS
 	
 Verbreitung:
 	- Sowohl kostenlose Open Source, aber auch kostenpflichtige Dienste
 	- Datensammlung
 	- Web-Map-Service (WMS-Dienste)
-
+https://earthexplorer.usgs.gov
 
 **Die häfigsten Probleme bei der Analyse**
+
+Bildvorverarbeitung
 - Mosaik
 	- Zusammenfügen mehrerer Datensätz, z.B. bei großen Beobachtungsflächen
+	R-Beispiel:
+	https://www.rdocumentation.org/packages/raster/versions/3.3-13/topics/mosaic
+	
 - Wolkenentfernung
 	- entfernen von Wolken(-schatten) z.B. mit Hilfe von Referenzbildern oder Einbeziehung zusätzlicher Kanäle
-Bildvorverarbeitung
+	R-Beispiel:
+	https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/intro-spectral-data-r/
+	
 - atmospherische Korrekturen
 	- entfernen der durch die Athmosphäre und Reflektionen verzerrte Strahlung (Wolken/Gase/gestreute Reflexionen)
+	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/atmosph%C3%A4renkorrektur
+	
 - gemetrische Korrekturen
 	- Überführen der Daten in ein Koordinatensystem, sowie anpassung der Verzerrung
+	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/geometrische-korrektur
+	
