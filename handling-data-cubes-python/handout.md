@@ -19,7 +19,8 @@ Data Cubes oder auch OLAP-Würfel (**O**n**l**ine **a**nalytical **p**rocessing)
 ## NumPy - Numerical Python
 *„The fundamental package for scientific computing with Python”*
   
-Numpy ist eine Python Bibliothek  zum Arbeiten mit Arrays, Funktionen der linearen Algebra und Matritzen. Sollen komplexere Statistische Analysen aufgestellt werden, geht dies meist über die Funktionen der numpy Bibliothek hinaus. Dann lässt sich die [SciPy-Bibliothek](https://www.scipy.org/scipylib/index.html) empfehlen. Auch ist das Plotten von Arrays mit numpy nicht möglich. Sollen die Ergebnisse oder Daten dargestellt werden, kann man die [matplotlib-Bibliothek](https://matplotlib.org/), welche mithilfe der [Cartopy-Bibliothek](https://scitools.org.uk/cartopy/docs/latest/) auch Kartenprojektionen erstellt oder für dynamische Plots die [Bokeh-Bibliothek](https://docs.bokeh.org/en/latest/) verwenden. Array-Objekte von Numpy sind eine schnellere Alternative als die von Python zur verfügunggestellte Listenstruktur. Durch Verwendung kontinuierlicher Speicherstellen ist eine effizientere und schnellere Verarbeitung möglich. 
+Numpy ist eine Python Bibliothek  zum Arbeiten mit Arrays, Funktionen der linearen Algebra und Matritzen. Sollen komplexere Statistische Analysen aufgestellt werden, geht dies meist über die Funktionen der numpy Bibliothek hinaus. Dann lässt sich die [SciPy-Bibliothek](https://www.scipy.org/scipylib/index.html) empfehlen. Auch ist das Plotten von Arrays mit numpy nicht möglich. Sollen die Ergebnisse oder Daten dargestellt werden, kann man die [matplotlib-Bibliothek](https://matplotlib.org/), welche mithilfe der [Cartopy-Bibliothek](https://scitools.org.uk/cartopy/docs/latest/) auch Kartenprojektionen erstellt oder für dynamische Plots die [Bokeh-Bibliothek](https://docs.bokeh.org/en/latest/) verwenden. Die Verknüpfung von numpy mit einer weitern Python-Bibliothek zur Darstellung der Ergebnisse lässt sich gut umsetzten, wobei teilweise darauf geachtet werden muss das Daten in der richtigen Einheit übergeben werden. 
+Array-Objekte von Numpy sind eine schnellere Alternative als die von Python zur verfügunggestellte Listenstruktur. Durch Verwendung kontinuierlicher Speicherstellen ist eine effizientere und schnellere Verarbeitung möglich. 
   
 #### Erstellen eines ndarrays
 ```
@@ -35,7 +36,7 @@ Ndarrays sind mehrdimensionale, homogene Datenstrukturen. Die Anzahl der Dimensi
 
 ## XArray
 
-Die Python Bibliothek xarray verbindet die Vorteile von numpy und pandas (Tabellendatenstruktur mit Zugriff über Spalten und Zeilennamen). Xarray erleichert das Arbeiten mit mehrdimensionalen Arrays durch Einführung eines Lable-Systems. So können Beschriftungen in Form von Dimensionen, Koordinaten und Attributen hinzugefügt werden. Dadurch kann auf einzelne Attribute anhand eines Lables zugegriffen werden, wodurch der weniger intuitive Zugriff über Indices erspart bleibt. Somit können Fehler (z.B. ein flascher Index-Zugriff) vermieden werden. Sowohl einzelne Arrays können so über Namen ausgewählt und kombiniert, aber auch Daten entlang einer Dimension über mehrere Arrays können so ausgewählt und kombiniert werden. Weiterhin lassen sich auch netCDF-Ein-und Ausgaben damit realisieren, sowie das Plotten von den Daten.
+Die Python Bibliothek xarray verbindet die Vorteile von numpy und pandas (Tabellendatenstruktur mit Zugriff über Spalten und Zeilennamen). Xarray erleichert das Arbeiten mit mehrdimensionalen Arrays durch Einführung eines Lable-Systems. So können Beschriftungen in Form von Dimensionen, Koordinaten und Attributen hinzugefügt werden. Dadurch kann auf einzelne Attribute anhand eines Lables zugegriffen werden, wodurch der weniger intuitive Zugriff über Indices erspart bleibt. Somit können Fehler (z.B. ein flascher Index-Zugriff) vermieden werden. Sowohl einzelne Arrays können so über Namen ausgewählt und kombiniert, aber auch Daten entlang einer Dimension über mehrere Arrays können so ausgewählt und kombiniert werden. Weiterhin lassen sich auch netCDF-Ein-und Ausgaben damit realisieren, sowie das Plotten von den Daten. 
 
  #### Erstellen eines xarrys
  ```
@@ -52,7 +53,7 @@ Die im Array repräsentierten Daten werden über den Parameter *data* übergeben
 
 ## Zarr
 
-Die Python Bibliothek Zarr dient der Speicherung von Daten in komprimierten Abschnitten (chunks), in n-dimensionalen Arrays. Es wird das Erstellen von multidimensionalen Arrays mit beliebigen numpy-dtype ermöglicht. Dabei kann entlang jeder Dimension ein Chunk-Array erstellt werden. Diese können komprimiert und/oder gefiltert mit einem beliebigen NumCodecs-Codec weiterverwendet werden. Auch das Speichern auf der Festplatte, in Zip-Datein ... ist möglich. Zusätzlich ist das Organisieren über Gruppen und Hiearachien häufig nützlich. 
+Die Python Bibliothek Zarr dient der Speicherung von Daten in komprimierten Abschnitten (chunks), in n-dimensionalen Arrays. Es wird das Erstellen von multidimensionalen Arrays mit beliebigen numpy-dtype ermöglicht. Dabei kann entlang jeder Dimension ein Chunk-Array erstellt werden. Diese können komprimiert und/oder gefiltert mit einem beliebigen NumCodecs-Codec weiterverwendet werden. Auch das Speichern auf der Festplatte, in Zip-Datein ... ist möglich. Zusätzlich ist das Organisieren über Gruppen und Hiearachien häufig nützlich. Die in der Theorie logisch und praktisch erscheinenden Features dieser Bibliothek habe ich bisher in der konkreten Anwendung in Python nicht wirklich gebraucht oder für diese eine sinnvolle Einbindung in einfache Beispiele gefunden.
 
 #### Erstellen eines zarr's
 ```
@@ -69,7 +70,7 @@ Hierbei wird bei der Erstellung über den Parameter *shape* die Größe des mehr
 
 ## netCDF4 (Network Commen Data Form)
 
-Hierbei handelt es sich um eine Softwarebibliothek, die maschienenunabhängige Datenformate für die gemeinsame Nutzung von Array-orientierten wissenschaftlichen Daten unterstüzt. Neben den Daten, können auch Informationen über diese dort gespeichert werden. Weiterhin ist es möglich auch nur mit kleinen Teilmengen des großen Datensets zu arbeiten und auch von Remote-Servern darauf zuzugreifen.
+Hierbei handelt es sich um eine Softwarebibliothek, die maschienenunabhängige Datenformate für die gemeinsame Nutzung von Array-orientierten wissenschaftlichen Daten unterstüzt. Neben den Daten, können auch Informationen über diese dort gespeichert werden. Weiterhin ist es möglich auch nur mit kleinen Teilmengen des großen Datensets zu arbeiten und auch von Remote-Servern darauf zuzugreifen. Da viele wissenschaftliche Datensets in diesem Format zur Verfügung stehen und mit dieser Bibliothek eine einfache Integration in Python-Projekte möglich ist, erschien mir die Anwendung und Umsetzung dieser nützlich und unkompliziert. Um einen Überblick über bestimmte Datensets (z.B. Satelliten Images von Sentinel p5) zu bekommen bietet sich Panoply an. Anschließend können dann nur die benötigten Ebenen der Datei in Python geladen werden.
 [netCDF4 Dokumentation](http://unidata.github.io/netcdf4-python/netCDF4/index.html)
 
 [Mehrdimensionale Datenstruktur](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)
