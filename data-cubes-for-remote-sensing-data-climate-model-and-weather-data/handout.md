@@ -2,16 +2,16 @@
 @neli98
 
 ## Datenwürfel allgemein
-* auch bekannt als OLAP-Würfel (OLAP = Online Analytical Processing)
-* relevant im Bereich des Data-Warehousing
-* nützlich zur Strukturierung von Daten (Big Data)
-* beliebig viele Dimensionen möglich
+* auch bekannt als OLAP-Würfel (OLAP = Online Analytical Processing) [2]
+* relevant im Bereich des Data-Warehousing [1]
+* nützlich zur Strukturierung von Daten (Big Data) [1]
+* beliebig viele Dimensionen möglich [1]
   * leicht vorzustellen als 3D-Würfel (siehe untenstehende Grafik)
-* Speicherung der Daten in einzelnen Elementen des Würfels
-* dynamische Betrachtungsweisen der Daten aus verschiedenen Perspektiven möglich
+* Speicherung der Daten in einzelnen Elementen des Würfels [2]
+* dynamische Betrachtungsweisen der Daten aus verschiedenen Perspektiven möglich [2]
 * verschiedene Grundoperationen, wie z.B.:
-  * Slice-Operation (Ausschneiden einer Datenscheibe)
-  * Dice-Operation (Erzeugen eines kleineren Würfels aus Ursprungswürfel)
+  * Slice-Operation (Ausschneiden einer Datenscheibe) [2]
+  * Dice-Operation (Erzeugen eines kleineren Würfels aus Ursprungswürfel) [2]
 * graphische Veranschaulichung anhand eines Beispiels aus der Betriebswirtschaft:
 ![Data Cube](https://images.tecchannel.de/bdb/362924/840x473.jpg)
 
@@ -19,15 +19,14 @@
 ## Datenwürfel im Kontext der Geoinformatik
 
 ### Anwendungsfälle
-* hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - speziell Earth Observation(EO)-Daten
+* hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - speziell Earth Observation(EO)-Daten [3]
   * speziell bei Daten mit zeitlicher Dimension
   * Schnittstelle zwischen Daten und Nutzeranwendungen
 * Vereinfachung der Analyse von z.B.:
-  * Abholzung/Rodung von Wäldern
-  * illegalem Rohstoffabbau
-  * Dürreregionen
-  * Bedeckung des Bodens durch Schnee
-  * Wetterentwicklungen
+  * Abholzung/Rodung von Wäldern [3]
+  * illegalem Rohstoffabbau [3]
+  * Dürreregionen [4]
+  * Wetterentwicklungen [4]
 
 
 ### Beispiele
@@ -49,17 +48,28 @@
 
 
 ### Vorteile und Möglichkeiten
-* Bereitstellung eines zentralen Datenpools
-* flexibler Zugriff auf ausgewählte Datenausschnitte
-* Zugriff auf *Analysis Ready Data (ARD)*
-* flexible Anwendbarkeit, z.B. über Cloud-Services als auch lokal
-* Ermöglichung der einfachen und schnellen Analyse verhältnismäßig großer (EO-)Datenmengen
-* effizientere Entwicklerzusammenarbeit bezüglich Codes und Algorithmen, ermöglicht durch festgelegte Datenstrukturen
-* breite Verwendbarkeit der Daten durch standardisierten Abruf über z.B. OGC Web Coverage Service (WCS)
+* Bereitstellung eines zentralen Datenpools [3]
+* flexibler Zugriff auf ausgewählte Datenausschnitte [5]
+* Zugriff auf *Analysis Ready Data (ARD)* [3]
+* flexible Anwendbarkeit, z.B. über Cloud-Services als auch lokal [5]
+* einfache und schnelle Analyse verhältnismäßig großer (EO-)Datenmengen [5]
+* effizientere Entwicklerzusammenarbeit bezüglich Codes und Algorithmen, ermöglicht durch festgelegte Datenstrukturen [3]
+* breite Verwendbarkeit der Daten durch standardisierten Abruf über z.B. OGC Web Coverage Service (WCS) [6]
 
 
 ### Nachteile und Herausforderungen
-* Bildung von Datenwürfeln aufgrund großer Datenmengen oftmals zeitaufwendig
-* Vorstrukturierung der Daten notwendig
-* Performance abhängig von Datenmengen
-* Akzeptanz und Skalierbarkeit (des Open Data Cube)
+* Bildung von Datenwürfeln aufgrund großer Datenmengen oftmals zeitaufwendig [7]
+* Vorstrukturierung der Daten notwendig [3]
+* Performance abhängig von Datenmengen [5]
+* Akzeptanz und Skalierbarkeit [3]
+
+
+## Quellen
+
+[1] https://www.techopedia.com/definition/28530/data-cube
+[2] https://www.guru99.com/online-analytical-processing.html
+[3] https://www.opendatacube.org
+[4] https://cockpit.hub.eox.at/storage/uploads/edc-editor/Euro_Data_Cube_summary_brochure.pdf
+[5] https://galaktika-soft.com/blog/olap-cubes.html
+[6] https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/
+[7] https://blog.mcaconnect.com/trouble-data-cubes
