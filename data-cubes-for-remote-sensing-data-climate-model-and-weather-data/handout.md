@@ -33,9 +33,9 @@
 * Open Data Cube ([mehr Informationen](https://www.opendatacube.org))
   * internationale Open-Source Initiative
   * freie Bereitstellung von EO-Daten
-   * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's
-   * dadurch Liberalisierung und Erhöhung des Nutzens der Daten
-   * Bereitstellung über eine auf Python basierende API
+    * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's
+    * dadurch Liberalisierung und Erhöhung des Nutzens der Daten
+    * Bereitstellung über eine auf Python basierende API
 * Earth Server ([mehr Informationen](https://www.earthserver.eu))
   * Zusammenschluss mehrerer internationaler Forschungseinrichtungen
   * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten
