@@ -61,7 +61,8 @@
 * Bildung von Datenwürfeln aufgrund großer Datenmengen oftmals zeitaufwendig [7]
 * Vorstrukturierung der Daten notwendig [3]
 * Performance abhängig von Datenmengen [5]
-* Akzeptanz und Skalierbarkeit [3]
+* Akzeptanz seitens der Datenlieferanten [3]
+* Skalierung auf sämtliche Regionen und Länder [3]
 
 
 ## 3. Quellen
