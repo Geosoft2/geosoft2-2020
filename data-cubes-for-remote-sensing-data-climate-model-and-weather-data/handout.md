@@ -19,7 +19,7 @@
 ## 2. Datenwürfel im Kontext der Geoinformatik
 
 ### 2.1 Anwendungsfälle
-* hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - speziell Earth Observation(EO)-Daten [3]
+* hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - z.B. Earth Observation(EO)-Daten [3]
   * speziell bei Daten mit zeitlicher Dimension
   * Schnittstelle zwischen Daten und Nutzeranwendungen
 * Vereinfachung der Analyse von z.B.:
