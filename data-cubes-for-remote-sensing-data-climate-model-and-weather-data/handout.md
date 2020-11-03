@@ -36,7 +36,7 @@
     * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's [3]
     * dadurch Liberalisierung und Erhöhung des Nutzens der Daten [3]
     * Bereitstellung über eine auf Python basierende API [3]
-* Earth Server ([mehr Informationen](https://www.earthserver.eu))
+* Earth Server Datacube Federation ([mehr Informationen](https://www.earthserver.eu))
   * Zusammenschluss mehrerer internationaler Forschungseinrichtungen [8]
   * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten [8]
 * Next Generation Network Enabled Weather Project ([mehr Informationen](https://en.wikipedia.org/wiki/Next_Generation_Network_Enabled_Weather))
