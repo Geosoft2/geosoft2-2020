@@ -31,18 +31,18 @@
 
 ### 2.2 Beispiele
 * Open Data Cube ([mehr Informationen](https://www.opendatacube.org))
-  * internationale Open-Source Initiative
-  * freie Bereitstellung von EO-Daten
-    * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's
-    * dadurch Liberalisierung und Erhöhung des Nutzens der Daten
-    * Bereitstellung über eine auf Python basierende API
+  * internationale Open-Source Initiative [3]
+  * freie Bereitstellung von EO-Daten [3]
+    * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's [3]
+    * dadurch Liberalisierung und Erhöhung des Nutzens der Daten [3]
+    * Bereitstellung über eine auf Python basierende API [3]
 * Earth Server ([mehr Informationen](https://www.earthserver.eu))
-  * Zusammenschluss mehrerer internationaler Forschungseinrichtungen
-  * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten
+  * Zusammenschluss mehrerer internationaler Forschungseinrichtungen [8]
+  * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten [8]
 * Next Generation Network Enabled Weather Project ([mehr Informationen](https://en.wikipedia.org/wiki/Next_Generation_Network_Enabled_Weather))
-  * Initiative der USA
-  * Bereitstellung von 4D-Wetterdaten
-  * Analyse von Wetterdaten zur besseren Wettervorhersage und Optimierung des Flugverkehrs
+  * Initiative der USA [9]
+  * Bereitstellung von 4D-Wetterdaten [9]
+  * Analyse von Wetterdaten zur besseren Wettervorhersage und Optimierung des Flugverkehrs [9]
 * Euro Data Cube ([mehr Informationen](https://eurodatacube.com/#features))
 
 
@@ -73,3 +73,5 @@
 * [5] https://galaktika-soft.com/blog/olap-cubes.html
 * [6] https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/
 * [7] https://blog.mcaconnect.com/trouble-data-cubes
+* [8] https://www.earthserver.eu/tech/datacube-manifesto/The-Datacube-Manifesto.pdf
+* [9] https://enacademic.com/dic.nsf/enwiki/11816251
