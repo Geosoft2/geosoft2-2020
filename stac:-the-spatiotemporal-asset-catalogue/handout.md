@@ -24,7 +24,7 @@ Data Users haben zusätzlichen Aufwand durch die schwierige Suche nach Daten und
 
 Weitere Infos: [Website STAC](https://stacspec.org/why-stac.html)
 
-## Ziele von STAC
+### Ziele von STAC
 
 Die Hauptziele sind eine erhöhte **Zugänglichkeit und Interoperabilität**.
 
@@ -33,6 +33,15 @@ STAC möchte als standardisierter Weg für die Veröffentlichung raumzeitlicher 
 Dazu sollen die Veröffentlichung von Geodaten und das Durchsuchen (Crawlen) von Geodaten vereinfacht werden.
 
 Weitere Infos: [Website STAC](https://stacspec.org/overview.html)
+
+### Thematisch ähnliche Standards
+
+- **Catalogue Services for the Web (CSW):** Veröffentlichung von Metadaten über Geodienste, Geoanwendungen und Geodaten in einem Webkatalog
+- **Web Coverage Service (WCS):** Web-basierte Abfrage von multi-dimensionalen Coverage Daten
+- **Web Coverage Processing Service (WCPS):** Sprache für die Extraktion, Verarbeitung und Analyse multi-dimensionaler Coverage Daten
+- **ISO 19115:** Schema zur Beschreibung geographischer Informationen und Services
+
+STAC will keinen neuen Metadaten-Standard erfinden. Nutzer sollen zu ihren eigenen Metadaten linken, die ISO 19115, OGC CSW etc. verwenden. STAC will eine Ebene über den diesen Metadaten-Standards bilden, um raumzeitliche Informationen zugänglicher zu machen. Dabei bietet STAC den Vorteil, dass es simpler und verständlicher ist als die komplexen OGC Standards und die Suche nach Geodaten insbesondere für Nicht-GI-Experten vereinfacht.
 
 ## STAC Spezifikation
 
