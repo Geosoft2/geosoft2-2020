@@ -20,6 +20,7 @@
 
 ### Anwendungsfälle
 * hilfreich beim Umgang mit großen, multidimensionalen GIS-Datenmengen - speziell Earth Observation(EO)-Daten
+  * speziell bei Daten mit zeitlicher Dimension
   * Schnittstelle zwischen Daten und Nutzeranwendungen
 * Vereinfachung der Analyse von z.B.:
   * Abholzung/Rodung von Wäldern
