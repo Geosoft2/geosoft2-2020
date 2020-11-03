@@ -66,10 +66,10 @@
 
 ## Quellen
 
-[1] https://www.techopedia.com/definition/28530/data-cube
-[2] https://www.guru99.com/online-analytical-processing.html
-[3] https://www.opendatacube.org
-[4] https://cockpit.hub.eox.at/storage/uploads/edc-editor/Euro_Data_Cube_summary_brochure.pdf
-[5] https://galaktika-soft.com/blog/olap-cubes.html
-[6] https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/
-[7] https://blog.mcaconnect.com/trouble-data-cubes
+* [1] https://www.techopedia.com/definition/28530/data-cube
+* [2] https://www.guru99.com/online-analytical-processing.html
+* [3] https://www.opendatacube.org
+* [4] https://cockpit.hub.eox.at/storage/uploads/edc-editor/Euro_Data_Cube_summary_brochure.pdf
+* [5] https://galaktika-soft.com/blog/olap-cubes.html
+* [6] https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/
+* [7] https://blog.mcaconnect.com/trouble-data-cubes
