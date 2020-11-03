@@ -66,12 +66,12 @@
 
 ## 3. Quellen
 
-* [1] https://www.techopedia.com/definition/28530/data-cube
-* [2] https://www.guru99.com/online-analytical-processing.html
-* [3] https://www.opendatacube.org
-* [4] https://cockpit.hub.eox.at/storage/uploads/edc-editor/Euro_Data_Cube_summary_brochure.pdf
-* [5] https://galaktika-soft.com/blog/olap-cubes.html
-* [6] https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/
-* [7] https://blog.mcaconnect.com/trouble-data-cubes
-* [8] https://www.earthserver.eu/tech/datacube-manifesto/The-Datacube-Manifesto.pdf
-* [9] https://enacademic.com/dic.nsf/enwiki/11816251
+* [1] techopedia (o.J.): What is a Data Cube?. https://www.techopedia.com/definition/28530/data-cube Abgerufen am 01.11.2020
+* [2] guru99 (o.J.): What is OLAP? Cube, Operations & Types in Data Warehouse. https://www.guru99.com/online-analytical-processing.html Abgerufen am 01.11.2020
+* [3] opendatacube (o.J.): An Open Source Geospatial Data Management and Analysis Platform. https://www.opendatacube.org Abgerufen am 31.10.2020
+* [4] Euro Data Cube (o.J.): Euro Data Cube Services. https://cockpit.hub.eox.at/storage/uploads/edc-editor/Euro_Data_Cube_summary_brochure.pdf Abgerufen am 01.11.2020
+* [5] Galaktikasoft (o.J.): OLAP Cubes. https://galaktika-soft.com/blog/olap-cubes.html Abgerufen am 01.11.2020
+* [6] Business Geomatics (2019): rasdaman: Einfache Handhabung von Big Data dank Cube-Technologie. https://www.business-geomatics.com/2019/02/04/mit-den-diensten-der-foederation/ Abgerufen am 01.11.2020
+* [7] MCA Connect (2017): The Trouble with Data Cubes. https://blog.mcaconnect.com/trouble-data-cubes Abgerufen am 02.11.2020
+* [8] Baumann, P. (2017): The Datacube Manifesto. https://www.earthserver.eu/tech/datacube-manifesto/The-Datacube-Manifesto.pdf Abgerufen am 01.11.2020
+* [9] enacademic (o.J.): Next Generation Network Enabled Weather. https://enacademic.com/dic.nsf/enwiki/11816251 Abgerufen am 01.11.2020
