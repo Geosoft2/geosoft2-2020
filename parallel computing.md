@@ -147,7 +147,7 @@ df = dd.read\_csv(...)
 
 from dask.distributed import Client
 
-client = Client(tcp://192.168.178.23:8786)
+client = Client("tcp://192.168.178.23:8786")
 
 df.x.sum().compute()
 ```
@@ -160,13 +160,13 @@ df.x.sum().compute()
 import dask.array as da
 
 
-x= da.random.random((5000,5000) chunks=(1000,1000))
+x= da.random.random((5000,5000))## evtl chunks=(1000,1000) hinzufügen
 
 y=da.exp(x).sum()
 
 from dask.distributed import Client
 
-client = Client(tcp://192.168.178.23:8786)
+client = Client("tcp://192.168.178.23:8786")
 
 y.compute()
 ```
