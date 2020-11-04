@@ -71,7 +71,7 @@ Weitere Infos: [Website STAC](https://stacspec.org/core.html), [STAC Item Spezif
 
 ### STAC Catalog
 
-Bei dem STAC Catalog handelt es sich um eine JSON-Datei mit einer Liste an Links zu STAC Items und/oder Links zu Sub-Catalogs, wodurch eine hierarchische Anordnung von STAC Items möglich ist. STAC Catalogs haben eine flexible Struktur und linken STAC Items, damit sie leicht gecrawlt oder durchgebrowst werden können.
+Bei dem STAC Catalog handelt es sich um eine JSON-Datei mit einer Liste an Links zu STAC Items und/oder Links zu Sub-Catalogs, wodurch eine hierarchische Anordnung von STAC Items möglich ist. Die Aufteilung in Sub-Catalogs ist Sache des Catalog-Erstellers und dient dem einfacheren Browsen. STAC Catalogs haben eine flexible Struktur und linken STAC Items, damit sie leicht gecrawlt oder durchgebrowst werden können.
 
 STAC Catalogs können als statische oder dynamische Kataloge implementiert werden. Statische Kataloge bestehen aus einem Set aus Dateien auf einem Web-Server, die zueinander linken und deswegen gecrawlt werden können. Dynamische Kataloge werden als API implementiert und antworten dynamisch auf Nutzeranfragen. Statische Kataloge bieten den Vorteil, dass sie sehr zuverlässig und einfacher zu implementieren sind.
 
@@ -82,6 +82,8 @@ Weitere Infos: [Website STAC](https://stacspec.org/core.html), [STAC Catalog Spe
 ### STAC Collection
 
 Die STAC Collection ist eine Erweiterung des STAC Catalog. Eine STAC Collection enthält zusätzliche Felder für die Beschreibung des räumlichen und zeitlichen Umfangs der Daten, der Lizenz, der Keywords, der Anbieter etc. 
+
+Es wird empfohlen verwandte STAC Items/logische Gruppen von STAC Items als Collection zu veröffentlichen um diese näher zu definieren.
 
 Beispiele: [Collection ohne Item](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/examples/sentinel2.json), [Collection mit Item](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/examples/landsat-collection.json)
 
