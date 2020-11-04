@@ -73,13 +73,13 @@ Bildvorverarbeitung
 	R-Beispiel:
 	https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/intro-spectral-data-r/
 	
-- atmospherische Korrekturen
+- Atmosphärische Korrekturen
 	- entfernen der durch die Athmosphäre und Reflektionen verzerrte Strahlung (Wolken/Gase/gestreute Reflexionen)
 	Mehr Informationen:
 	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/atmosph%C3%A4renkorrektur
 	
-- gemetrische Korrekturen
-	- Überführen der Daten in ein Koordinatensystem, sowie anpassung der Verzerrung
+- Geometrische Korrekturen
+	- Überführen der Daten in ein Koordinatensystem, sowie Anpassung der Verzerrung
 	Mehr Informationen:
 	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/geometrische-korrektur
 	
