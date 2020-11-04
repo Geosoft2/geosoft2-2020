@@ -203,3 +203,14 @@ Folgende Tipps haben sich aus den letzten Jahren ergeben:
 - **Rollen** (Product Owner, Entwicklerteam, Scrum Master) werden nicht klar verteilt bzw. wechseln zügig (z.B. jede Woche ein andere Scrum Master); die Dozenten stehen gerne als beratende Scrum Master zur Verfügung
 - die Dozenten nehmen die Rolle der **Stakeholder** ein, sie sind Kunden, Andender, und Management
 - die **Lernerfahrung** ist wichtig, daher nehmt euch klare Zeitfenster (im positiven wie begrenzenden Sinne) für Aufgabenschätzung und Retrospektive
+
+## Gesund am Arbeitsplatz und stressfreies Arbeiten
+
+Als Computer-Arbeiter und insbesondere in einem digitalen Semester lohnt es sich, bewusst mit der Zeit am Bildschirm und in Telefonkonferenzen umzugehen.
+Einige Techniken, zu denen ihr selbst online Recherchieren könnt, solltet ihr ausprobieren - auch wenn es sich vielleicht komisch anfühlt, so könnt ihr ggf. eure Leistungsfähigkeit und Zufriedenheit mit kleinen Tricks steigern.
+
+- [Pomodoro-Technick](https://de.wikipedia.org/wiki/Pomodoro-Technik), inkl. verschiedener Software die dabei hilft
+- [Microbreaks](https://www.bbc.com/worklife/article/20190718-microbreaks) und Limitierungen, z.B. mit [Workrave](https://workrave.org/)
+- _gemeinsame_ Kaffeepausen auch online im Team
+- [_"Die beste Sitzposition ist immer die nächste"_](https://www.deutschlandfunknova.de/beitrag/homeoffice-und-gesundheit-die-beste-sitzposition-ist-die-naechste)
+- ... teilt gerne [eure Erfahrungen im Chat](https://zivmattermost.uni-muenster.de/geosoft2/channels/balance)
