@@ -157,7 +157,7 @@ df.x.sum().compute()
 *Mit Anlegen von Testdaten:*
 
 ```python
-Import dask.array as da
+import dask.array as da
 
 
 x= da.random.random((5000,5000) chunks=(1000,1000))
