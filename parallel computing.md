@@ -81,15 +81,12 @@ PVM (parallel virtual machine)
 Hauptprobleme: 
 -  Erhaltung der schnellen und interaktiven Analyse (auch bei extrem großen Datensätzen)
 -  Parralles Prozessieren ohne Abhängigkeit von der Art der Berechnung
--  Für den Anwender keine Ausseinandersetzung mit den Details der Parrallellisierung
+-  keine Berührungspunkte des Anwenders mit den Details der Parrallellisierung
 
-parallel computing engine which does not strongly constrain the type of computations
-nor require the user to engage with the details of parallelization
+- Pangeo
+  - Programm zur Unterstützung der Entwicklung von Open Source Software für große Geoanalysen
+  - Stellt Konfigurationen für Jupyter, Xarray und Dask bereit
 
-
-Pangeo(coordinating and supporting the development of open source software for large geoanalysis) provides configurations for deploying Jupyter, Xarray and Dask
-high-performance computing clusters and cloud platforms
-interactively 
  
 
 Quellen:
