@@ -38,7 +38,7 @@
     * Bereitstellung über eine auf Python basierende API [3]
 * Euro Data Cube ([mehr Informationen](https://eurodatacube.com/#features))
   * Initative der European Space Agency [10]
-  * kommerzielle Bereitstellung von EO-Daten [10]
+  * kommerzielle Bereitstellung von EO-Daten (u.a. Copernicus-Daten) [10]
 * Earth Server Datacube Federation ([mehr Informationen](https://www.earthserver.eu))
   * Zusammenschluss mehrerer internationaler Forschungseinrichtungen [8]
   * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten [8]
