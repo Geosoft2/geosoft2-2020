@@ -8,6 +8,7 @@ Wie: Aufteilung eines Problems in verschiedene Teilaufgaben
 
 
 
+
 ![Parralleles Arbeiten](https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87\_parallel-computing-diagram.png)
 
 Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87\_parallel-computing-diagram.png](https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87_parallel-computing-diagram.png)
@@ -20,7 +21,6 @@ Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e26
     - verteilte systeme (destributed computing)
     - cluster
     - viele weitere
-  
 - Parallele Programmierung braucht parallele Software
 
 - Threads
@@ -32,13 +32,11 @@ Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e26
 **Standards**
 
 OpenMP
-
 - Shared-Memory
 
 - Schleifen werden auf unterschiedliche Prozesse aufgeteilt
 
 MPI (Message Passing Interface)
-
 - Unabhänige Prozesse kommunizieren miteinander
 
 - Implementierungen:
@@ -52,18 +50,16 @@ MPI (Message Passing Interface)
 - TPO++
 
 PVM (parallel virtual machine)
+
 - Bündelung von Computern gleicher Hardware zu einer Ressource
 
 - Kommunikation via Netzwerk
 
+
 [http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/](http://www.shodor.org/refdesk/Resources/Tutorials/ParProgProtocols/)
-
 [https://de.wikipedia.org/wiki/OpenMP](https://de.wikipedia.org/wiki/OpenMP)
-
 [https://de.wikipedia.org/wiki/Message\_Passing\_Interface](https://de.wikipedia.org/wiki/Message_Passing_Interface)
-
 [https://de.wikipedia.org/wiki/Parallele\_Virtuelle\_Maschine](https://de.wikipedia.org/wiki/Parallele_Virtuelle_Maschine)
-
 [https://en.wikipedia.org/wiki/Parallel\_Virtual\_Machine](https://en.wikipedia.org/wiki/Parallel_Virtual_Machine)
 
 **Prozessierung von EarthData**
@@ -93,24 +89,14 @@ Quellen:
 
 [https://stories.dask.org/en/latest/pangeo.html](https://stories.dask.org/en/latest/pangeo.html)
 
-
 Kostenpflichtige oder weiterführende Quellen:
-
 https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwi\_zIivt-LsAhX7IMUKHXUqCI4QFjAEegQIBxAC&amp;url=https%3A%2F%2Fwww.mdpi.com%2F2072-4292%2F12%2F1%2F62%2Fpdf&amp;usg=AOvVaw2h7\_u3dgny0xgiTNvMq02t
-
-
 [https://ui.adsabs.harvard.edu/abs/2016AGUFMIN11E..06L/abstract](https://ui.adsabs.harvard.edu/abs/2016AGUFMIN11E..06L/abstract)
-
 [https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNwBBqdj/pdf](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNwBBqdj/pdf)
-
 [https://link.springer.com/chapter/10.1007/978-3-642-03214-1\_2](https://link.springer.com/chapter/10.1007/978-3-642-03214-1_2)
-
 https://books.google.de/books?hl=de&amp;lr=&amp;id=GufgfWSHt28C&amp;oi=fnd&amp;pg=PR7&amp;dq=Parallel+Programming+Protocols+earth+data&amp;ots=6nPr-8sNrc&amp;sig=FIb51CqEgtmXHNKaWuFNEChkba8#v=onepage&amp;q&amp;f=false
-
 [https://ieeexplore.ieee.org/document/7968632](https://ieeexplore.ieee.org/document/7968632)
-
 [https://www.researchgate.net/publication/221013365\_Parallel\_Distributed\_Application\_Framework\_for\_Earth\_Science\_Data\_Processing](https://www.researchgate.net/publication/221013365_Parallel_Distributed_Application_Framework_for_Earth_Science_Data_Processing)
-
 https://ieeexplore.ieee.org/abstract/document/7740234
 
 **Dask**
@@ -128,9 +114,9 @@ https://ieeexplore.ieee.org/abstract/document/7740234
 - Anwendungen:
 
   - High Performance Computing
-
+  
   - Maschinelles Lernen und Künstliche Intelligenz
-
+  
   - Modellberechnungen
 
 **Exemplarisch, wie geht DASK:**
