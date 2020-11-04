@@ -60,7 +60,7 @@ Verbreitung:
 	- Web-Map-Service (WMS-Dienste)
 https://earthexplorer.usgs.gov
 
-**Die häfigsten Probleme bei der Analyse**
+**Die häufigsten Probleme bei der Analyse**
 
 Bildvorverarbeitung
 - Mosaik
@@ -75,9 +75,11 @@ Bildvorverarbeitung
 	
 - atmospherische Korrekturen
 	- entfernen der durch die Athmosphäre und Reflektionen verzerrte Strahlung (Wolken/Gase/gestreute Reflexionen)
+	Mehr Informationen:
 	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/atmosph%C3%A4renkorrektur
 	
 - gemetrische Korrekturen
 	- Überführen der Daten in ein Koordinatensystem, sowie anpassung der Verzerrung
+	Mehr Informationen:
 	http://www.fis.uni-bonn.de/recherchetools/infobox/profis/bildvorverarbeitung/geometrische-korrektur
 	
