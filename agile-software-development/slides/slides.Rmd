@@ -31,6 +31,11 @@ class: middle, center
 
 [https://twitter.com/CodeWisdom/status/989483498707832832](https://twitter.com/CodeWisdom/status/989483498707832832)
 
+--
+
+👉 [https://twitter.com/CodeWisdom/](https://twitter.com/CodeWisdom/)
+
+
 ???
 
 Motivation - ein Tweet von CodeWisdom heraus gegriffen
@@ -216,7 +221,7 @@ class: wwu-cassis, center, middle
 .pull-right[
 **Rollen**
 - Teilen & abwechseln
-- Dozenten = alle Stakeholder
+- Dozenten = verbleibende Stakeholder
 - Lernerfahrung 💯
 ]
 
@@ -267,17 +272,25 @@ Die Folien basieren auf dem R Paket [`xaringan`](https://github.com/yihui/xaring
 ---
 class: wwu-cassis, center, middle
 
-# Quiz!
+# Kreatives Quiz!
 
 ---
 class: center, middle
 
 # Anti-Patterns
 
+???
+
+super Suchbegriff bei Google, lehrreich
+
 ---
 class: center, middle
 
 # burn chart
+
+???
+
+Aufgaben verfolgen, Fortschritt merken
 
 ---
 class: center, middle
@@ -291,7 +304,7 @@ MR?
 ---
 class: center, middle
 
-# llective ownership
+# collective ownership
 
 ---
 class: center, middle
@@ -318,6 +331,10 @@ class: center, middle
 
 # jour fixe
 
+???
+
+insbesondere wichtig da alle Online arbeiten
+
 ---
 class: center, middle
 
@@ -332,3 +349,52 @@ class: center, middle
 class: center, middle
 
 # Unix philosophy
+
+???
+
+https://de.wikipedia.org/wiki/Unix-Philosophie
+
+Douglas McIlroy, der Erfinder der Unixpipes, fasste die Philosophie folgendermaßen zusammen:
+
+- Schreibe Computerprogramme so, dass sie nur eine Aufgabe erledigen und diese gut machen.
+- Schreibe Programme so, dass sie zusammenarbeiten.
+- Schreibe Programme so, dass sie Textströme verarbeiten, denn das ist eine universelle Schnittstelle.
+
+Gewöhnlich wird das verkürzt zu: **"Mache nur eine Sache und mache sie gut."** 
+
+---
+class: center, middle
+
+# Pomodoro
+
+--
+
+.pull-left[
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/34/Il_pomodoro.jpg)
+
+]
+
+.pull-right[
+
+[![](https://workrave.org/images/workrave-logo.svg)](https://workrave.org/)
+
+]
+
+???
+
+https://de.wikipedia.org/wiki/Pomodoro-Technik
+
+Die Technik besteht aus fünf Schritten:
+
+    die Aufgabe schriftlich formulieren
+    den Kurzzeitwecker auf 25 Minuten stellen
+    die Aufgabe bearbeiten, bis der Wecker klingelt; mit einem X markieren
+    kurze Pause machen (5 Minuten)
+    nach jeweils vier pomodori eine längere Pause machen (15–20 Minuten)
+
+------
+
+https://workrave.org/
+
+
