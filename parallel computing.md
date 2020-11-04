@@ -18,7 +18,7 @@ Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e26
   - Speicher
   - Architektur
     - Multi-core
-    - verteilte systeme (destributed computing)
+    - verteilte systeme (distributed computing)
     - cluster
     - viele weitere
 - Parallele Programmierung braucht parallele Software
