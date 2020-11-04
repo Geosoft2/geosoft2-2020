@@ -6,7 +6,9 @@ Warum: Schnellere Bearbeitung, skalierbare Rechenleistung
 
 Wie: Aufteilung eines Problems in verschiedene Teilaufgaben
 
-![](RackMultipart20201102-4-1bw009h_html_9355693fbef3ced4.png)
+
+
+![Parralleles Arbeiten](https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87\_parallel-computing-diagram.png)
 
 Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87\_parallel-computing-diagram.png](https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87_parallel-computing-diagram.png)
 
@@ -23,7 +25,7 @@ Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e26
 
 - Threads
 
-Verwenden von parallel arbeitenden Algorithmen
+- Verwenden von parallel arbeitenden Algorithmen
 
 [https://www.sintef.no/globalassets/upload/ikt/9011/simoslo/evita/2008/cai.pdf](https://www.sintef.no/globalassets/upload/ikt/9011/simoslo/evita/2008/cai.pdf)
 
