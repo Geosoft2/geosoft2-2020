@@ -1,9 +1,3 @@
-Ich habe wirklich Probleme gute Quellen zu finden, es scheint als ob jede Quelle, die halbwegs zu passen scheint von anderen Standards/Frameworks/Mathematischen Modellen spricht oder einfach Jahrzehnte alt ist… (Oder man muss für Wissenschaftliche Paper Geld bezahlen)
-
-Es wäre sehr hilfreich ein paar Quellen zu bekommen, auf die ich mich bedenkenlos beziehen kann und die die Standarts und Inhalte umreißt, die beleuchtet werden sollen.
-
-So weit bin ich auf einer allgemeinen Ebene gekommen (mit veralteten und schlechten Quellen):
-
 **Wann, Warum, Wie**
 
 Wann: Stapelverarbeitung bei großen Problemen, Heutzutage alltäglich (Prozessoren,HPC,Cloud computing)
@@ -16,13 +10,18 @@ Wie: Aufteilung eines Problems in verschiedene Teilaufgaben
 
 Bild 1: [https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87\_parallel-computing-diagram.png](https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e8e265f5b27697d5ce9bf87_parallel-computing-diagram.png)
 
-Parallele Programmierung hängt von paralleler Hardware ab
+- Parallele Programmierung hängt von paralleler Hardware ab
 
-**Wie weit soll hier auf die Hardware eingegangen werden ?**
+  - Speicher
+  - Architektur
+    - Multi-core
+    - verteilte systeme (destributed computing)
+    - cluster
+    - viele weitere
+  
+- Parallele Programmierung braucht parallele Software
 
-Parallele Programmierung braucht parallele Software
-
-Threads
+- Threads
 
 Verwenden von parallel arbeitenden Algorithmen
 
@@ -67,19 +66,43 @@ PVM (parallel virtual machine)
 
 **Prozessierung von EarthData**
 
-?
+- EarthData = riesige multi-dimensionale numerische Array (zB Temperatur, lat, long, Höhendaten, Zeit, Kalkulationen, ...)
+ 
+ - häufige Ziele:
+   - einfache Statistken
+   - Komponentenanalyse (räumliche und zeitliche Verfügbarkeit)
+   - Vergleich von Daten mit verschiedenen räumlichen und zeitlichen Strukturen
+   - Spektralanalyse über verschiedene räumliche und zeitliche Dimensionen
+   - Budgetdiagnosen
+   - machine learning
 
-Gerade hier brauche ich wirklich Hilfe. Ich habe keine Ahnung was ich hier erzählen soll. Mögliche, aber immer knapp nicht passende Quellen:
+Hauptprobleme: 
+-  Erhaltung der schnellen und interaktiven Analyse (auch bei extrem großen Datensätzen)
+-  Parralles Prozessieren ohne Abhängigkeit von der Art der Berechnung
+-  Für den Anwender keine Ausseinandersetzung mit den Details der Parrallellisierung
+
+parallel computing engine which does not strongly constrain the type of computations
+nor require the user to engage with the details of parallelization
+
+
+Pangeo(coordinating and supporting the development of open source software for large geoanalysis) provides configurations for deploying Jupyter, Xarray and Dask
+high-performance computing clusters and cloud platforms
+interactively 
+ 
+
+Quellen:
+
+[https://stories.dask.org/en/latest/pangeo.html](https://stories.dask.org/en/latest/pangeo.html)
+
+
+Kostenpflichtige oder weiterführende Quellen:
+
+https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwi\_zIivt-LsAhX7IMUKHXUqCI4QFjAEegQIBxAC&amp;url=https%3A%2F%2Fwww.mdpi.com%2F2072-4292%2F12%2F1%2F62%2Fpdf&amp;usg=AOvVaw2h7\_u3dgny0xgiTNvMq02t
+
 
 [https://ui.adsabs.harvard.edu/abs/2016AGUFMIN11E..06L/abstract](https://ui.adsabs.harvard.edu/abs/2016AGUFMIN11E..06L/abstract)
 
 [https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNwBBqdj/pdf](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNwBBqdj/pdf)
-
-[https://stories.dask.org/en/latest/pangeo.html](https://stories.dask.org/en/latest/pangeo.html)
-
-https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwi\_zIivt-LsAhX7IMUKHXUqCI4QFjAEegQIBxAC&amp;url=https%3A%2F%2Fwww.mdpi.com%2F2072-4292%2F12%2F1%2F62%2Fpdf&amp;usg=AOvVaw2h7\_u3dgny0xgiTNvMq02t
-
-Kostenpflichtige Quellen:
 
 [https://link.springer.com/chapter/10.1007/978-3-642-03214-1\_2](https://link.springer.com/chapter/10.1007/978-3-642-03214-1_2)
 
@@ -100,6 +123,8 @@ https://ieeexplore.ieee.org/abstract/document/7740234
 - Rechenaufgaben auf verschiedene PCs (Worker) aufteilen und parallel abarbeiten
 
 - Alternative: Apache Spark (SQL)
+
+- Technologie: Xarray, Zarr
 
 - Anwendungen:
 
