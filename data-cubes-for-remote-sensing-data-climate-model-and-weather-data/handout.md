@@ -36,6 +36,9 @@
     * z.B. zur Unterstützung der Analyse in Hinblick auf die SDG's [3]
     * dadurch Liberalisierung und Erhöhung des Nutzens der Daten [3]
     * Bereitstellung über eine auf Python basierende API [3]
+* Euro Data Cube ([mehr Informationen](https://eurodatacube.com/#features))
+  * Initative der European Space Agency [10]
+  * kommerzielle Bereitstellung von EO-Daten [10]
 * Earth Server Datacube Federation ([mehr Informationen](https://www.earthserver.eu))
   * Zusammenschluss mehrerer internationaler Forschungseinrichtungen [8]
   * Bereitstellung von 3D-Satellitenbildern und 4D-Wetterdaten [8]
@@ -43,7 +46,7 @@
   * Initiative der USA [9]
   * Bereitstellung von 4D-Wetterdaten [9]
   * Analyse von Wetterdaten zur besseren Wettervorhersage und Optimierung des Flugverkehrs [9]
-* Euro Data Cube ([mehr Informationen](https://eurodatacube.com/#features))
+
 
 
 
@@ -76,3 +79,4 @@
 * [7] MCA Connect (2017): The Trouble with Data Cubes. https://blog.mcaconnect.com/trouble-data-cubes Abgerufen am 02.11.2020
 * [8] Baumann, P. (2017): The Datacube Manifesto. https://www.earthserver.eu/tech/datacube-manifesto/The-Datacube-Manifesto.pdf Abgerufen am 01.11.2020
 * [9] enacademic (o.J.): Next Generation Network Enabled Weather. https://enacademic.com/dic.nsf/enwiki/11816251 Abgerufen am 01.11.2020
+* [10] Euro Data Cube (o.J.): The EO Information Factory. https://eurodatacube.com/#features Abgerufen am 02.11.2020
