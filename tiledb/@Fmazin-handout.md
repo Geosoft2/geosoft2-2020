@@ -7,6 +7,7 @@
 ### 1. 1. Introduction
 
 #### 1. 1. 1. Brief project history
+
 TileDB is a database project with the self proclaimed goal to go beyond existing data storage structures[1]. TDB spun off MIT and Intel Labs. It has two components a open source [C++](https://en.wikipedia.org/wiki/C%2B%2B) library called **TileDB embedded** and a commercial [SARS](https://en.wikipedia.org/wiki/Software_as_a_service) platform called **TileDB cloud**.
 
 We will focus on **TileDB embedded** since the TDB Cloud is an extension of the other component and a closer inspection would be out of scope for this presentation.
@@ -21,6 +22,7 @@ The second difference is that they made the [access and computation](https://en.
 
 
 ### 1. 2. Universal Data Engine
+
 The above mentioned attributes of TileDB make it in the words of the developers a universal data Engine. Broken down this means: 'It can store almost anything and you can access it through almost anything.'  
 The need for a universal format comes from the experience that the head developer had when seeing the vast sea of file formats and data storages used in the different academic fields. [5]
 
@@ -67,13 +69,23 @@ The cells and tiles will be assigned number following a pattern. The different c
 So these are the basics of how TBA Arrays work. If you want to find out more you can read the [docs](https://docs.tiledb.com/main/).
 
 ## 2. How can it be used in geoinformatics?
+
 This project has lot of promise for geoinfromatics because geospatial data was one the key use cases the deleopers had in mind [5]. The array data format as shown above can be used for 2D raster data. But it can also represent other data like a point cloud as a sparse 3D array or data with time component.
 
 The array format is really cloud friendly, which makes it a good solution for the ever growing data files. And you can integrate it different programming languages at the same time.  It has also Integration with some geospatial libraries like [GDAL](https://en.wikipedia.org/wiki/GDAL), [PDAL](https://pdal.io/) or [rasterio](https://github.com/mapbox/rasterio) [8].
 
-The fast slicing which is enabled through the special data indexing is also very practical for geoinformatics. So that you can get subarrays of areas of interest fast.   
+The fast slicing which is enabled through the special data indexing is also very practical for geoinformatics. So that you can get subarrays of areas of interest fast.
 
-## 3. Conclusion
+## 3. Personal experience   
+
+I have tried the R api of TDB embedded. Unfortunately i'm not the greatest in R and the [R api](https://tiledb-inc.github.io/TileDB-R/reference/index.html) is rather poorly documented in my opinion at least in contrast to [Python and C++ versions](https://tiledb-inc-tiledb.readthedocs-hosted.com/en/1.6.3/index.html). So my experience is pretty limited. But i managed to set up a simple dense array. This is however the script is more less copie and pasted from the [tdb docs](https://docs.tiledb.com/main).
+
+In my experience it is rather complicated to set up a simple array. But you can really finetune every little bit  and in the end i think you really have a powerful data structure. However i would presue TDB embedded in R because of the lack of documentation and would turn to the Python api. Then you could test the interoperability between Python and R. I have included the commented R script in this folder so you can see these points in more detail.
+
+Also i have tried to run the TDB geospatial docker image. The download works just fine unfortunately i am not able to get it to read my files from the windows directories. Maybe this isn't an issue in Linux. But as it stands i can not say anymore about this particular program.
+
+## 4. Conclusion
+
 So these are key things you should keep in mind about TileDB:
 
 Database Feature | TileDB
@@ -84,17 +96,16 @@ Supported Languages (ATM) | C, C++, Python, R, Java and Go
 Supported geospatial libraries | GDAL, PDAL, rasterio, SAR, MapServer
 
 
-## 3. Annex
+## 5. Annex
 
-### 3. 1. Abbreviations
+### 5. 1. Abbreviations
 - DB
   : Database.
 - TDB
   : TileDB.
 
-## 3. 2. Sources
+## 5. 2. Sources
 
-#### 3. 2. 1. Footnotes
 [1]: TileDB, Inc. (n.d.): *The universal Data Engine*. https://tiledb.com/ Retrieved 30.10.2020  
 [2]: TileDB, Inc (n.d.): *The Problem* In *TileDB Docs* https://docs.tiledb.com/main/the-problem#monolithic-databases Retrieved 30.10.2020   
 [3]: Baer, T. (2020) *TileDB introduces canonical database storage format*. ZDNet https://www.zdnet.com/article/tiledb-introduces-canonical-database-storage-format/ Retrieved 29.10.2020  
@@ -103,5 +114,3 @@ Supported geospatial libraries | GDAL, PDAL, rasterio, SAR, MapServer
 [6]: TileDB, Inc (n.d.): *Data Model* In *TileDB Docs* https://docs.tiledb.com/main/basic-concepts/data-model Retrieved 30.10.2020  
 [7]: TileDB, Inc (n.d.): *Data Format* In *TileDB Docs* https://docs.tiledb.com/main/basic-concepts/data-format Retrieved 30.10.2020  
 [8]: TileDB, Inc (n.d.): *Introduction* In *TileDB Geospatial* https://docs.tiledb.com/geospatial/ Retrieved 30.10.2020
-
-#### 3. 2. 2. Additional Sources
