@@ -14,6 +14,7 @@
   * Dice-Operation (Erzeugen eines kleineren Würfels aus Ursprungswürfel) [2]
 * graphische Veranschaulichung anhand eines Beispiels aus der Betriebswirtschaft:
 ![Data Cube](https://images.tecchannel.de/bdb/362924/840x473.jpg)
+([Quelle](https://images.tecchannel.de/bdb/362924/840x473.jpg))
 
 
 ## 2. Datenwürfel im Kontext der Geoinformatik
