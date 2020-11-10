@@ -84,6 +84,11 @@ In my experience it is rather complicated to set up a simple array. But you can 
 
 Also i have tried to run the TDB geospatial docker image. The download works just fine unfortunately i am not able to get it to read my files from the windows directories. Maybe this isn't an issue in Linux. But as it stands i can not say anymore about this particular program.
 
+>EDIT:
+After learning something about Docker volumes i could get TDB geospatial running. After that i tried to get the produced array to open in R. This was no problem but i could not access the array because R could not interact with the dimensions and therefore the data of the array. The reason for this is that R apparently has trouble handeling [UInt64](https://docs.microsoft.com/de-de/dotnet/api/system.uint64?view=netcore-3.1) values.  
+>
+>At this point i switched to the python version which has not this problem and is more intuitive. And i have made a additional demo which involves TDB geospatial and the python version. For the instructions see [here](./python_demo_instructions.md).  
+
 ## 4. Conclusion
 
 So these are key things you should keep in mind about TileDB:

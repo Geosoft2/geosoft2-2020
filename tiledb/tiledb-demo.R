@@ -16,7 +16,7 @@ attr2 <- tiledb_attr("attr2", type = "INT32")
 
 # Schema and array Creation
 sch    <- tiledb_array_schema(dom, c(attr, attr2), cell_order = "COL_MAJOR",tile_order = "ROW_MAJOR")
-tiledb_array_create("demo3", sch)
+tiledb_array_create("tiledb_demo", sch)
 
 
 # Prepare two 4x3 dense array
@@ -28,7 +28,7 @@ I <- c(1:2)
 J <- c(2:4)
 
 # Open the array and write the data to it and show schema
-A <- tiledb_dense(uri = "demo3")
+A <- tiledb_dense(uri = "tiledb_demo")
 schema(A)
 A[I, J] <- list(data, data2)
 
