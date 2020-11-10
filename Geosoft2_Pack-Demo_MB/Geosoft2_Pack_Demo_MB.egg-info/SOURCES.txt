@@ -1,0 +1,9 @@
+README.md
+setup.py
+Geosoft2_Pack_Demo_MB.egg-info/PKG-INFO
+Geosoft2_Pack_Demo_MB.egg-info/SOURCES.txt
+Geosoft2_Pack_Demo_MB.egg-info/dependency_links.txt
+Geosoft2_Pack_Demo_MB.egg-info/top_level.txt
+SimplePackage/__init__.py
+SimplePackage/a.py
+SimplePackage/b.py
