@@ -182,6 +182,8 @@ Neben den DIAS Diensten gibt es ebenfalls die [Google Earth Engine](https://deve
 ### Literaturverzeichnis
 - https://www.copernicus.eu/en
 - https://www.d-copernicus.de/daten/satelliten/daten-sentinels/
+- https://developers.google.com/earth-engine/datasets
+- https://www.copernicus.eu/de/datenzugriff/dias
 
 ### Abbildungsverzeichnis
 - Abb. 1 & 2: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/applications/maritime-monitoring (Abruf: 21.10.2020)
