@@ -168,10 +168,14 @@ Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satelliten
 * Jede der fünf konkurrierenden Plattformen bietet auch Zugang zu zusätzlichen kommerziellen Satelliten- oder Nicht-Weltraum-Datensätzen sowie Premium-Angeboten in Bezug auf Support oder Priorität. 
 * Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.** 
 
+* Auf kostenfreier Basis sind die Möglichkeiten bei den Anbietern aber sehr beschränkt, gerade im Bereich von Speicher- und Rechenkapazität.Auf virtuelle Maschinen kann in den kostenfreien Versionen nicht zurückgegriffen werden.
+
 ![wekeo](images/wekeo.png) ![sobloo](images/sobloo.png)  ![creodias](images/creodias.png) ![onda](images/onda.png) ![mundi](images/mundi.png) 
 
 Die Anbieter bieten unterschiedliche APIs und Funktionalitäten in verschiedenen Abrechnungsmodularitäten an. Im kostenfreien Bereich ist die Funktionalität in Bezug auf Rechen- und Speicherkapazität sehr eingeschränkt!
 Vergleich der Anbieter und Produkte [hier](https://earsc.org/dias-comparison/).
+
+Neben den DIAS Diensten gibt es ebenfalls die [Google Earth Engine](https://developers.google.com/earth-engine/datasets), welche als Archiv für Sentineldaten dient, die in jede Programmierumgebung importiert werden können. Ein Hochladen unterschiedlichster Raster- und Vektodaten ist dort ebenfalls möglich. 
 
 ## Quellen
 
