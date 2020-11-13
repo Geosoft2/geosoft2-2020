@@ -74,6 +74,8 @@ Insgesamt 5 eigenständige Satelliten und 2 spezielle Messinstrumente, die auf S
   - Nährstoffverteilung in den Weltmeeren
   - Energiehaushalt des Planeten
   - Wasserqualität oder Umweltverschmutzung an den Küsten
+* Bestimmung des Orbits mit 3 cm Genauigkeit 
+* Radiometrische Genauigkeit von 3 K absolut (0,6 K relativ)
 * Sentinel-3B wurde 2018 gestartet
 
 #### Sentinel-5P
@@ -99,20 +101,25 @@ EUTMETSAT: „Europäische Organisation für die Nutzung meteorologischer Satell
 
 #### Sentinel-4
 
-* Präzise Daten über Konzentration von Schadstoffen in der Luft
+* Daten über Konzentration von Schadstoffen in der Luft
+* Dient auch zur Überwachung von Klimaprotokollen
 * Stündliche Messungen von Ozonbelastung, Feinstaubgehalt, Luftqualität
 * Erster Einsatz auf einem Meteosat soll 2022 erfolgen
+* Der [Messvorgang] (https://earth.esa.int/web/guest/missions/esa-future-missions/sentinel-4/) umfasst ein hochauflösendes Spektrometersystem, das mit 3 Bändern im  ultravioletten, sichtbaren und im Bereich des nahen Infrarots des Reflexionsspektrum des Sonnenlichts arbeitet und diese Bereiche sichtbar macht.
+* Die jeweilige spektrale Auflösung beträgt 0,5 nm im ultravioletten und sichtbaren Bereich und 0,12 nm im nahen Infrarot Bereich.
+* Die abgeleiteten Datenprodukte umfassen die optische Tiefe von O3, NO2, SO2, HCHO und Aerosol.
 
 #### Sentinel-5
 
 * Mission zu Messung von Atmosphärengasen weltweit (Methan, Ozon, Stickstoff, Aerosole)
 * will komplexe Prozesse in der Erdatmosphäre sichtbar machen
-* Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems, MetOp-SG, erfolgen
+* Erster Einsatz soll 2022 auf neuer Generation des polaren EUMETSAT Systems, [MetOp-SG] (https://earth.esa.int/web/eoportal/satellite-missions/m/metop-sg), erfolgen
 
 
 ## Zeitplan
 
 ![schedule](images/Schedule.png)
+</br> Abb 8: Copernicus Constellation deployment schedule </br> Quelle: https://www.d-copernicus.de/
 
 
 ## Allgemeine Geschäftsbedingungen für die Nutzung der Copernicus-Daten
@@ -141,6 +148,8 @@ gehört dem Benutzer. Abgeleitete Werke sind bei Veröffentlichung, Teilen oder 
 2. Bereich selektieren
 3. Produkte suchen
 4. Produkte auswählen und herunterladen
+
+Die Dateiformate die heruntergeladen werden und die Dateigrößen sind abhängig vom ausgewählten Produkt.
 
 #### Python API
 
@@ -192,4 +201,5 @@ Neben den DIAS Diensten gibt es ebenfalls die [Google Earth Engine](https://deve
 - Abb. 4: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-2_Colour_visions_brosch%C3%BCre_eng.pdf (Abruf: 21.10.2020)
 - Abb. 5&6: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-3_A_bigger_picture_brosch%C3%BCre_engl.pdf (Abruf: 21 10. 2020)
 - Abb. 7: https://www.d-copernicus.de/fileadmin/Content/pdf/Sentinel-5p_factsheet_171211.pdf (Abruf: 21.10.2020)
+- Abb. 8: https://www.d-copernicus.de/fileadmin/Content/pdf/Forum_2017/04_COP-Nutzertage2017_COP-NG.pdf (Abruf: 21.10.2020)
 
