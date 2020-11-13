@@ -169,7 +169,7 @@ Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satelliten
 * Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.** 
 
 * Auf kostenfreier Basis sind die Möglichkeiten bei den Anbietern aber sehr beschränkt, gerade im Bereich von Speicher- und Rechenkapazität.Auf virtuelle Maschinen kann in den kostenfreien Versionen nicht zurückgegriffen werden.
-* Das [gitHub repository von der DIAS Plattform WEkEO](https://github.com/wekeo/wekeo-jupyter-lab) bietet gute Anhaltpunkte und Beispiele, wie die unterschiedlichen Sentinel Daten verarbeitet werden können und welche Bibliotheken in diesem Zusammenhang hilfreich sind.
+* Das [gitHub repository von der DIAS Plattform WEkEO](https://github.com/wekeo/wekeo-jupyter-lab) bietet gute Anhaltpunkte und Beispiele, wie auf die unterschiedlichen Sentinel Daten zugegriffen werden kann und wie diese verarbeitet werden können bzw. welche Bibliotheken in diesem Zusammenhang hilfreich sind.
 
 ![wekeo](images/wekeo.png) ![sobloo](images/sobloo.png)  ![creodias](images/creodias.png) ![onda](images/onda.png) ![mundi](images/mundi.png) 
 
