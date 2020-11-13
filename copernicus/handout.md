@@ -166,10 +166,10 @@ Im Rahmen des Copernicus-Programms wurde für die Vorverarbeitung der Satelliten
 * Europäische Kommission hat den Einsatz von fünf Cloud-basierten Plattformen finanziert, die einen zentralen Zugang zu Copernicus-Daten und -Informationen sowie zu Verarbeitungswerkzeugen ermöglichen. Diese Plattformen werden als DIAS (Data and Information Access Services) bezeichnet.
 * ermöglichen es den Nutzern, Copernicus-Daten und -Informationen aufzufinden, zu handhaben, zu verarbeiten und herunterzuladen. Alle DIAS-Plattformen bieten Zugang zu den Daten von Copernicus Sentinel sowie zu den Informationsprodukten aus den sechs Betriebsdiensten von Copernicus sowie zu Cloud-basierten Tools.
 * Jede der fünf konkurrierenden Plattformen bietet auch Zugang zu zusätzlichen kommerziellen Satelliten- oder Nicht-Weltraum-Datensätzen sowie Premium-Angeboten in Bezug auf Support oder Priorität. 
-* Das [gitHub repository von der DIAS Plattform WeKeo](https://github.com/wekeo/wekeo-jupyter-lab) bietet gute Anhaltpunkte und Beispiele, wie die unterschiedlichen Sentinel Daten verarbeitet werden können und welche Bibliotheken in diesem Zusammenhang hilfreich sind.
 * Dank eines einzigen Zugangspunktes für die gesamten Copernicus-Daten und -Informationen **ermöglicht DIAS den Benutzern die Entwicklung und das Hosting ihrer eigenen Anwendungen in der Cloud, ohne dass voluminöse Dateien von mehreren Zugangspunkten heruntergeladen und lokal verarbeitet werden müssen.** 
 
 * Auf kostenfreier Basis sind die Möglichkeiten bei den Anbietern aber sehr beschränkt, gerade im Bereich von Speicher- und Rechenkapazität.Auf virtuelle Maschinen kann in den kostenfreien Versionen nicht zurückgegriffen werden.
+* Das [gitHub repository von der DIAS Plattform WEkEO](https://github.com/wekeo/wekeo-jupyter-lab) bietet gute Anhaltpunkte und Beispiele, wie die unterschiedlichen Sentinel Daten verarbeitet werden können und welche Bibliotheken in diesem Zusammenhang hilfreich sind.
 
 ![wekeo](images/wekeo.png) ![sobloo](images/sobloo.png)  ![creodias](images/creodias.png) ![onda](images/onda.png) ![mundi](images/mundi.png) 
 
