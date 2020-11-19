@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Geosoft2-Pack-Demo-MB
+Version: 0.0.1
+Summary: This Package is only for demonstration in a Students Project
+Home-page: ---
+Author: Maximilian Busch
+Author-email: m_busc15@wwu.de
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
